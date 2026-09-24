@@ -1,0 +1,126 @@
+{
+  "source_commit": "8a2b8de",
+  "scenario": "mixed-threats",
+  "mob_equipment": [
+    "none",
+    "none",
+    "bow"
+  ],
+  "seed": 2002956061,
+  "conditions": {
+    "bow-mixed-r2-native": {
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "runs": [
+        {
+          "base": "/current/bow-mixed/rocket2-native-trial-1",
+          "kills": 2,
+          "kills_by_mob": {
+            "zombie": 2,
+            "skeleton": 0
+          },
+          "steps": 400,
+          "hpc_job": 29486747,
+          "final_health": 17.64,
+          "deaths": 0,
+          "target_steps": 395,
+          "scan_steps": 5,
+          "wall_seconds": 61.1744
+        }
+      ]
+    },
+    "bow-mixed-r2-assisted": {
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "runs": [
+        {
+          "base": "/current/bow-mixed/rocket2-assisted-trial-1",
+          "kills": 2,
+          "kills_by_mob": {
+            "zombie": 2,
+            "skeleton": 0
+          },
+          "steps": 400,
+          "hpc_job": 29486748,
+          "final_health": 20.0,
+          "deaths": 0,
+          "target_steps": 301,
+          "scan_steps": 99,
+          "wall_seconds": 57.3608
+        }
+      ]
+    },
+    "bow-mixed-r3-native": {
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "runs": [
+        {
+          "base": "/current/bow-mixed/rocket3-native-trial-1",
+          "kills": 1,
+          "kills_by_mob": {
+            "zombie": 1,
+            "skeleton": 0
+          },
+          "steps": 400,
+          "hpc_job": 29486749,
+          "final_health": 20.0,
+          "deaths": 0,
+          "target_steps": 381,
+          "scan_steps": 19,
+          "wall_seconds": 40.752
+        }
+      ]
+    },
+    "bow-mixed-r3-assisted": {
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "runs": [
+        {
+          "base": "/current/bow-mixed/rocket3-assisted-trial-1",
+          "kills": 2,
+          "kills_by_mob": {
+            "zombie": 1,
+            "skeleton": 1
+          },
+          "steps": 400,
+          "hpc_job": 29486732,
+          "final_health": 16.91,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0,
+          "wall_seconds": 59.5963
+        },
+        {
+          "base": "/current/bow-mixed/rocket3-assisted-trial-2",
+          "kills": 0,
+          "kills_by_mob": {
+            "zombie": 0,
+            "skeleton": 0
+          },
+          "steps": 400,
+          "hpc_job": 29486733,
+          "final_health": 20.0,
+          "deaths": 0,
+          "target_steps": 391,
+          "scan_steps": 9,
+          "wall_seconds": 60.0002
+        },
+        {
+          "base": "/current/bow-mixed/rocket3-assisted-trial-3",
+          "kills": 2,
+          "kills_by_mob": {
+            "skeleton": 0,
+            "zombie": 2
+          },
+          "steps": 400,
+          "hpc_job": 29486734,
+          "final_health": 17.81,
+          "deaths": 0,
+          "target_steps": 339,
+          "scan_steps": 61,
+          "wall_seconds": 52.6535
+        }
+      ]
+    }
+  }
+}
