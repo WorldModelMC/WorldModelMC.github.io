@@ -1,6 +1,5 @@
 {
   "protocol": "pixel-only four-zombie goal stability and lower-body SAM mask pilots",
-  "note": "One run per listed trial; Minecraft mob AI varies despite the shared seed. The lower-body check cleared one of three repeats, survived with three kills once, and died without a kill once. These are not win-rate estimates.",
   "runs": [
     {
       "id": "id-refresh",
@@ -98,5 +97,24 @@
       "health": 0,
       "video": "/regression/blue-trousers-repeat-3.mp4"
     }
-  ]
+  ],
+  "same_version_group": {
+    "source_commit": "b810fb8",
+    "world_and_policy_seed": 2002956061,
+    "run_ids": [
+      "blue-trousers-pilot",
+      "blue-trousers-repeat-2",
+      "blue-trousers-repeat-3"
+    ],
+    "zombie_kills": [
+      4,
+      3,
+      0
+    ],
+    "cleared_alive": [
+      true,
+      false,
+      false
+    ]
+  }
 }
