@@ -95,7 +95,8 @@
       "cleared_alive": false,
       "target_steps": 269,
       "scan_steps": 37,
-      "health": 0
+      "health": 0,
+      "video": "/regression/blue-trousers-repeat-3.mp4"
     }
   ]
 }

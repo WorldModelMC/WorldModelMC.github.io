@@ -28,7 +28,7 @@
 <section class="panel" id="scenario-counts">
 <h2>Scenario counts</h2>
 <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>Runs</th><th>Clears</th><th>Kills per run</th><th>Videos on this page</th></tr></thead><tbody>
-<tr><td><a href="#four-zombie-results">Four zombies</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>1</td></tr>
+<tr><td><a href="#four-zombie-results">Four zombies</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>2</td></tr>
 <tr><td><a href="#two-skeletons">Two skeletons</a></td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
 <tr><td><a href="#mixed-threats">Two zombies + one skeleton</a></td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
 </tbody></table></div>
@@ -47,7 +47,7 @@
 <div class="recordings" id="videos">
 <article class="recording"><h3>Run 1 · 4 kills</h3><video controls preload="metadata" playsinline data-base="/regression/blue-trousers-pilot" src="/regression/blue-trousers-pilot-masks.mp4" aria-label="Run 1 with SAM 3 segmentation"></video><p><a href="/regression/blue-trousers-pilot.mp4">Screen recording</a> · <a href="/regression/blue-trousers-pilot-masks.mp4">Segmentation recording</a></p></article>
 <article class="recording"><h3>Run 2 · 3 kills</h3><p>Video: —</p></article>
-<article class="recording"><h3>Run 3 · 0 kills</h3><p>Video: —</p></article>
+<article class="recording"><h3>Run 3 · 0 kills</h3><video controls preload="metadata" playsinline src="/regression/blue-trousers-repeat-3.mp4" aria-label="Run 3 raw screen recording"></video><p><a href="/regression/blue-trousers-repeat-3.mp4">Screen recording</a> · Segmentation recording: —</p></article>
 </div>
 </section>
 <section class="panel" id="detector-metrics">
@@ -67,7 +67,7 @@
 <section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Controller source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd></dl></section>
 </main>
 <script>
-const toggle=document.getElementById('show-masks');const videos=[...document.querySelectorAll('#videos video')];toggle.addEventListener('change',()=>{for(const video of videos){const time=video.currentTime,playing=!video.paused;video.src=`${video.dataset.base}${toggle.checked?'-masks':''}.mp4`;video.addEventListener('loadedmetadata',()=>{video.currentTime=Math.min(time,video.duration||time);if(playing)video.play().catch(()=>{});},{once:true})}});document.getElementById('play-all').addEventListener('click',async()=>{const button=document.getElementById('play-all');if(videos.some(video=>video.paused)){await Promise.all(videos.map(video=>video.play().catch(()=>{})));button.textContent='Pause all'}else{videos.forEach(video=>video.pause());button.textContent='Play all available'}});
+const toggle=document.getElementById('show-masks');const videos=[...document.querySelectorAll('#videos video')];toggle.addEventListener('change',()=>{for(const video of videos){if(!video.dataset.base)continue;const time=video.currentTime,playing=!video.paused;video.src=`${video.dataset.base}${toggle.checked?'-masks':''}.mp4`;video.addEventListener('loadedmetadata',()=>{video.currentTime=Math.min(time,video.duration||time);if(playing)video.play().catch(()=>{});},{once:true})}});document.getElementById('play-all').addEventListener('click',async()=>{const button=document.getElementById('play-all');if(videos.some(video=>video.paused)){await Promise.all(videos.map(video=>video.play().catch(()=>{})));button.textContent='Pause all'}else{videos.forEach(video=>video.pause());button.textContent='Play all available'}});
 </script>
 </body>
 </html>
