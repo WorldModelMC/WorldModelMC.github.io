@@ -30,7 +30,7 @@
 </section>
 <section class="panel" id="scenario-counts">
 <h2>Scenario counts</h2>
-<p class="note">Bow-equipped skeleton evaluations are pending. All skeleton recordings below are legacy runs with unarmed skeletons.</p>
+<p class="note">Bow-equipped skeleton runs are being prepared for publication. All skeleton recordings below are legacy runs with unarmed skeletons.</p>
 <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>Runs</th><th>Clears</th><th>Kills per run</th><th>Videos on this page</th></tr></thead><tbody>
 <tr><td><a href="#four-zombie-results">Four zombies · threshold 0.25, nearest</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>3</td></tr>
 <tr><td><a href="#startup-results">Four zombies · startup mask rule, nearest</a></td><td>3</td><td>2</td><td>4, 3, 4</td><td>3</td></tr>
@@ -70,10 +70,12 @@
 <label for="scenario-select">Scenario <select id="scenario-select"></select></label>
 <label for="version-select">Model and setup <select id="version-select"></select></label>
 <label for="trial-select">Trial <select id="trial-select"></select></label>
+<label for="playback-pace">Playback pace <select id="playback-pace"><option value="game">Game-step pace · original 20 fps</option><option value="wall">Measured average wall-clock pace</option></select></label>
 <label><input id="show-masks" type="checkbox" checked> Show segmentation</label>
 <button id="play-all" type="button">Play all trials</button>
 </div>
 <video id="trial-video" controls preload="metadata" playsinline aria-label="Selected trial"></video>
+<p class="note" id="playback-note">Source videos contain one frame per control step at 20 fps. Measured pace spreads those same frames across the run's observed wall time; within-run timing still varies.</p>
 <p id="recording-status" class="note" hidden></p>
 <p class="note video-links"><a id="screen-link" href="#">Screen recording</a> · <a id="masks-link" href="#">Segmentation recording</a></p>
 <div id="model-info" class="run-info"><h3>Selected run</h3><dl id="model-info-list"></dl><p class="note" style="margin-top:14px">SAM 2 is used in the hybrid pilot only; other combat recordings here use SAM 3. <a href="/sam.html">View the separate SAM 2 and SAM 3 tests.</a></p></div>
@@ -102,7 +104,7 @@
 <tr><td>Startup rule + 0.75 s aim cap, nearest</td><td>2</td><td>29485277</td><td>400</td><td>2 zombies, 1 skeleton</td><td>No</td><td>17.94</td><td>16.27</td><td>261</td><td>139</td></tr>
 <tr><td>Startup rule + 0.75 s aim cap, nearest</td><td>3</td><td>29485278</td><td>400</td><td>2 zombies, 1 skeleton</td><td>No</td><td>10.75</td><td>9.75</td><td>356</td><td>44</td></tr>
 </tbody></table></div></section>
-<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Four-zombie threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Other-scenario threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/828c438">828c438</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>HUD-gate source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/65686e2">65686e2</a></dd><dt>Bow-skeleton scenario source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/8a2b8de">8a2b8de</a></dd><dt>Recording catalog</dt><dd><a href="/current/player-catalog.json">JSON catalog</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier four-zombie results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>Other-scenario threshold 0.25 results</dt><dd><a href="/current/old-threshold/manifest.json">JSON manifest</a></dd><dt>Startup-rule results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd><dt>HUD-gate result</dt><dd><a href="/current/hud-gate/manifest.json">JSON manifest</a></dd><dt>0.75-second aim-cap results</dt><dd><a href="/current/aim-age-cap/manifest.json">JSON manifest</a></dd></dl></section>
+<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Four-zombie threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Other-scenario threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/828c438">828c438</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>HUD-gate source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/65686e2">65686e2</a></dd><dt>Bow-skeleton scenario source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/8a2b8de">8a2b8de</a></dd><dt>Recording catalog</dt><dd><a href="/current/player-catalog.json">JSON catalog</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels and previous actions; SAM 3 detections or SAM 3-seeded SAM 2 masks from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier four-zombie results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>Other-scenario threshold 0.25 results</dt><dd><a href="/current/old-threshold/manifest.json">JSON manifest</a></dd><dt>Startup-rule results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd><dt>HUD-gate result</dt><dd><a href="/current/hud-gate/manifest.json">JSON manifest</a></dd><dt>0.75-second aim-cap results</dt><dd><a href="/current/aim-age-cap/manifest.json">JSON manifest</a></dd></dl></section>
 </main>
 <script src="/player.js" defer></script>
 </body>

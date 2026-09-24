@@ -93,7 +93,8 @@
           "final_health": 5.48,
           "deaths": 0,
           "target_steps": 371,
-          "scan_steps": 29
+          "scan_steps": 29,
+          "wall_seconds": 48.0981
         },
         {
           "base": "/current/startup-low-score/four-zombies-trial-2",
@@ -103,7 +104,8 @@
           "final_health": 2.19,
           "deaths": 0,
           "target_steps": 400,
-          "scan_steps": 0
+          "scan_steps": 0,
+          "wall_seconds": 48.1417
         },
         {
           "base": "/current/startup-low-score/four-zombies-trial-3",
@@ -113,7 +115,8 @@
           "final_health": 13.49,
           "deaths": 0,
           "target_steps": 400,
-          "scan_steps": 0
+          "scan_steps": 0,
+          "wall_seconds": 47.8655
         }
       ]
     },
@@ -143,7 +146,8 @@
           "final_health": 12.86,
           "deaths": 0,
           "target_steps": 296,
-          "scan_steps": 85
+          "scan_steps": 85,
+          "wall_seconds": 44.4216
         },
         {
           "base": "/regression/blue-trousers-repeat-2",
@@ -153,7 +157,8 @@
           "final_health": 4.03,
           "deaths": 0,
           "target_steps": 379,
-          "scan_steps": 0
+          "scan_steps": 0,
+          "wall_seconds": 46.3347
         },
         {
           "base": "/regression/blue-trousers-repeat-3",
@@ -163,7 +168,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 269,
-          "scan_steps": 37
+          "scan_steps": 37,
+          "wall_seconds": 36.5494
         }
       ]
     },
@@ -194,7 +200,8 @@
           "final_health": 18.6,
           "deaths": 0,
           "target_steps": 232,
-          "scan_steps": 168
+          "scan_steps": 168,
+          "wall_seconds": 42.5456
         }
       ]
     },
@@ -223,7 +230,8 @@
           "final_health": 20,
           "deaths": 0,
           "target_steps": 212,
-          "scan_steps": 188
+          "scan_steps": 188,
+          "wall_seconds": 38.5682
         }
       ]
     },
@@ -253,7 +261,8 @@
           "final_health": 5.57,
           "deaths": 0,
           "target_steps": 400,
-          "scan_steps": 0
+          "scan_steps": 0,
+          "wall_seconds": 37.9826
         }
       ]
     },
@@ -284,7 +293,8 @@
           "final_health": 1.01,
           "deaths": 0,
           "target_steps": 400,
-          "scan_steps": 0
+          "scan_steps": 0,
+          "wall_seconds": 54.2265
         },
         {
           "base": "/current/aim-age-cap/mixed-threats-trial-2",
@@ -294,7 +304,8 @@
           "final_health": 17.94,
           "deaths": 0,
           "target_steps": 261,
-          "scan_steps": 139
+          "scan_steps": 139,
+          "wall_seconds": 41.0997
         },
         {
           "base": "/current/aim-age-cap/mixed-threats-trial-3",
@@ -304,7 +315,8 @@
           "final_health": 10.75,
           "deaths": 0,
           "target_steps": 356,
-          "scan_steps": 44
+          "scan_steps": 44,
+          "wall_seconds": 47.6809
         }
       ]
     },
@@ -333,7 +345,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 356,
-          "scan_steps": 20
+          "scan_steps": 20,
+          "wall_seconds": 42.9539
         }
       ]
     },
@@ -363,7 +376,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 184,
-          "scan_steps": 152
+          "scan_steps": 152,
+          "wall_seconds": 33.9348
         }
       ]
     },
@@ -392,7 +406,8 @@
           "final_health": 8.0,
           "deaths": 0,
           "target_steps": 87,
-          "scan_steps": 513
+          "scan_steps": 513,
+          "wall_seconds": 34.8877
         }
       ]
     },
@@ -421,7 +436,8 @@
           "final_health": 13.67,
           "deaths": 0,
           "target_steps": 45,
-          "scan_steps": 555
+          "scan_steps": 555,
+          "wall_seconds": 32.662
         }
       ]
     },
@@ -450,7 +466,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 36,
-          "scan_steps": 280
+          "scan_steps": 280,
+          "wall_seconds": 17.1108
         }
       ]
     },
@@ -479,7 +496,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 67,
-          "scan_steps": 246
+          "scan_steps": 246,
+          "wall_seconds": 18.3072
         }
       ]
     },
@@ -508,7 +526,8 @@
           "final_health": 20.0,
           "deaths": 0,
           "target_steps": 435,
-          "scan_steps": 165
+          "scan_steps": 165,
+          "wall_seconds": 44.8571
         }
       ]
     },
@@ -537,7 +556,8 @@
           "final_health": 20.0,
           "deaths": 0,
           "target_steps": 547,
-          "scan_steps": 53
+          "scan_steps": 53,
+          "wall_seconds": 40.2012
         }
       ]
     },
@@ -566,7 +586,8 @@
           "final_health": 8.17,
           "deaths": 0,
           "target_steps": 324,
-          "scan_steps": 276
+          "scan_steps": 276,
+          "wall_seconds": 37.9354
         }
       ]
     },
@@ -595,7 +616,8 @@
           "final_health": 14.57,
           "deaths": 0,
           "target_steps": 159,
-          "scan_steps": 441
+          "scan_steps": 441,
+          "wall_seconds": 35.0007
         }
       ]
     },
@@ -624,7 +646,8 @@
           "final_health": 15.5,
           "deaths": 0,
           "target_steps": 238,
-          "scan_steps": 362
+          "scan_steps": 362,
+          "wall_seconds": 38.9253
         }
       ]
     },
@@ -653,7 +676,8 @@
           "final_health": 8.17,
           "deaths": 0,
           "target_steps": 159,
-          "scan_steps": 441
+          "scan_steps": 441,
+          "wall_seconds": 36.4622
         }
       ]
     },
@@ -682,7 +706,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 74,
-          "scan_steps": 188
+          "scan_steps": 188,
+          "wall_seconds": 15.5295
         }
       ]
     },
@@ -711,7 +736,8 @@
           "final_health": null,
           "deaths": 1,
           "target_steps": 81,
-          "scan_steps": 230
+          "scan_steps": 230,
+          "wall_seconds": 18.6855
         }
       ]
     },

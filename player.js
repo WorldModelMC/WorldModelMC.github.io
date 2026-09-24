@@ -1,6 +1,7 @@
 const scenarioSelect = document.getElementById('scenario-select');
 const versionSelect = document.getElementById('version-select');
 const trialSelect = document.getElementById('trial-select');
+const paceSelect = document.getElementById('playback-pace');
 const maskToggle = document.getElementById('show-masks');
 const playAllButton = document.getElementById('play-all');
 const video = document.getElementById('trial-video');
@@ -66,9 +67,23 @@ function showInfo() {
     addInfo('Outcome', `${run.kills} kills · ${run.deaths} deaths · ${run.steps} steps`);
     addInfo('Final health', run.final_health == null ? '—' : run.final_health);
     addInfo('Target / scan steps', `${run.target_steps ?? '—'} / ${run.scan_steps ?? '—'}`);
+    addInfo('Recorded wall time', run.wall_seconds == null ? '—' : `${run.wall_seconds.toFixed(1)} seconds`);
   } else {
     addInfo('Recording status', selectedVersion.status);
   }
+}
+
+function setPlaybackPace(run) {
+  const wall = paceSelect.querySelector('option[value="wall"]');
+  const available = run?.wall_seconds > 0;
+  wall.disabled = !available;
+  wall.textContent = available
+    ? `Measured average wall-clock pace · ${(run.steps / run.wall_seconds).toFixed(1)} steps/s`
+    : 'Measured wall-clock pace unavailable';
+  if (!available && paceSelect.value === 'wall') paceSelect.value = 'game';
+  const rate = paceSelect.value === 'wall' ? run.steps / (20 * run.wall_seconds) : 1;
+  video.defaultPlaybackRate = rate;
+  video.playbackRate = rate;
 }
 
 function populateVersions() {
@@ -100,6 +115,7 @@ function selectVideo(keepTime = false, autoplay = false) {
   const resume = keepTime && !video.paused;
   video.pause();
   if (!run) {
+    setPlaybackPace(null);
     video.removeAttribute('src');
     video.load();
     video.hidden = true;
@@ -110,6 +126,7 @@ function selectVideo(keepTime = false, autoplay = false) {
     return;
   }
   video.hidden = false;
+  setPlaybackPace(run);
   links.hidden = false;
   status.hidden = true;
   video.src = `${run.base}${maskToggle.checked ? '-masks' : ''}.mp4`;
@@ -129,6 +146,7 @@ scenarioSelect.addEventListener('change', () => { playAll = false; populateVersi
 versionSelect.addEventListener('change', () => { playAll = false; populateTrials(); });
 trialSelect.addEventListener('change', () => { playAll = false; selectVideo(); });
 maskToggle.addEventListener('change', () => selectVideo(true));
+paceSelect.addEventListener('change', () => setPlaybackPace(version()?.runs[Number(trialSelect.value) || 0]));
 playAllButton.addEventListener('click', () => {
   playAll = true;
   trialSelect.value = '0';
