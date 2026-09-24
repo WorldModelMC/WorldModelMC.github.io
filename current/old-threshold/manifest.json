@@ -1,0 +1,48 @@
+{
+  "source": "828c438",
+  "seed": 2002956061,
+  "setting": "SAM 3 threshold 0.25, nearest visible target",
+  "model_inputs": [
+    "screen pixels",
+    "prior actions",
+    "screen-derived segmentation"
+  ],
+  "evaluator_only": [
+    "simulator health",
+    "damage",
+    "kill counters"
+  ],
+  "runs": [
+    {
+      "scenario": "two-skeletons",
+      "trial": 1,
+      "hpc_job": 29485210,
+      "steps": 400,
+      "kills": {
+        "skeleton": 2
+      },
+      "death": false,
+      "final_health": 20.0,
+      "target_steps": 212,
+      "scan_steps": 188,
+      "screen_recording": "two-skeletons-trial-1.mp4",
+      "segmentation_recording": "two-skeletons-trial-1-masks.mp4"
+    },
+    {
+      "scenario": "mixed-threats",
+      "trial": 1,
+      "hpc_job": 29485210,
+      "steps": 376,
+      "kills": {
+        "zombie": 1,
+        "skeleton": 1
+      },
+      "death": true,
+      "final_health": null,
+      "target_steps": 356,
+      "scan_steps": 20,
+      "screen_recording": "mixed-threats-trial-1.mp4",
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+    }
+  ]
+}

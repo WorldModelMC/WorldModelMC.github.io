@@ -36,6 +36,7 @@
 <tr><td><a href="#two-skeletons">Two skeletons · startup mask rule, nearest</a></td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
 <tr><td><a href="#two-skeletons">Two skeletons · threshold 0.25, nearest</a></td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
 <tr><td><a href="#mixed-threats">Two zombies + one skeleton · startup mask rule, nearest</a></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><a href="#mixed-threats">Two zombies + one skeleton · threshold 0.25, nearest</a></td><td>1</td><td>0</td><td>2</td><td>1</td></tr>
 </tbody></table></div>
 </section>
 <section class="panel" id="four-zombie-results">
@@ -60,7 +61,7 @@
 <section class="panel" id="recordings">
 <h2>Recordings</h2>
 <div class="controls">
-<label for="cohort-select">Scenario and setting <select id="cohort-select"><option value="startup-four">Four zombies · startup mask rule, nearest</option><option value="baseline-four">Four zombies · threshold 0.25, nearest</option><option value="startup-skeleton">Two skeletons · startup mask rule, nearest</option><option value="baseline-skeleton">Two skeletons · threshold 0.25, nearest</option><option value="startup-mixed">Two zombies + one skeleton · startup mask rule, nearest</option></select></label>
+<label for="cohort-select">Scenario and setting <select id="cohort-select"><option value="startup-four">Four zombies · startup mask rule, nearest</option><option value="baseline-four">Four zombies · threshold 0.25, nearest</option><option value="startup-skeleton">Two skeletons · startup mask rule, nearest</option><option value="baseline-skeleton">Two skeletons · threshold 0.25, nearest</option><option value="startup-mixed">Two zombies + one skeleton · startup mask rule, nearest</option><option value="baseline-mixed">Two zombies + one skeleton · threshold 0.25, nearest</option></select></label>
 <label for="trial-select">Trial <select id="trial-select"></select></label>
 <label><input id="show-masks" type="checkbox" checked> Show segmentation</label>
 <button id="play-all" type="button">Play all trials</button>
@@ -81,8 +82,8 @@
 <p class="note">Detector metrics use saved pixel-based detection records. Outcome counters are read after each step and excluded from policy and controller inputs.</p>
 </section>
 <section class="panel" id="two-skeletons"><h2>Two skeletons</h2><table><thead><tr><th>Setting</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Final health</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody><tr><td>Startup mask rule, nearest</td><td>29485195</td><td>400</td><td>1</td><td>No</td><td>5.57</td><td>400</td><td>0</td></tr><tr><td>Threshold 0.25, nearest</td><td>29485210</td><td>400</td><td>2</td><td>No</td><td>20.00</td><td>212</td><td>188</td></tr></tbody></table></section>
-<section class="panel" id="mixed-threats"><h2>Two zombies + one skeleton</h2><table><thead><tr><th>Setting</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody><tr><td>Startup mask rule, nearest</td><td>29485195</td><td>336</td><td>0</td><td>Yes</td><td>184</td><td>152</td></tr></tbody></table></section>
-<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Earlier source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>New results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd></dl></section>
+<section class="panel" id="mixed-threats"><h2>Two zombies + one skeleton</h2><table><thead><tr><th>Setting</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody><tr><td>Startup mask rule, nearest</td><td>29485195</td><td>336</td><td>0</td><td>Yes</td><td>184</td><td>152</td></tr><tr><td>Threshold 0.25, nearest</td><td>29485210</td><td>376</td><td>1 zombie, 1 skeleton</td><td>Yes</td><td>356</td><td>20</td></tr></tbody></table></section>
+<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Four-zombie threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Other-scenario threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/828c438">828c438</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier four-zombie results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>Other-scenario threshold 0.25 results</dt><dd><a href="/current/old-threshold/manifest.json">JSON manifest</a></dd><dt>Startup-rule results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd></dl></section>
 </main>
 <script>
 const groups={
@@ -90,7 +91,8 @@ const groups={
   'baseline-four':[{base:'/regression/blue-trousers-pilot',kills:4},{base:'/regression/blue-trousers-repeat-2',kills:3},{base:'/regression/blue-trousers-repeat-3',kills:0}],
   'startup-skeleton':[{base:'/current/startup-low-score/two-skeletons-trial-1',kills:1}],
   'baseline-skeleton':[{base:'/current/old-threshold/two-skeletons-trial-1',kills:2}],
-  'startup-mixed':[{base:'/current/startup-low-score/mixed-threats-trial-1',kills:0}]
+  'startup-mixed':[{base:'/current/startup-low-score/mixed-threats-trial-1',kills:0}],
+  'baseline-mixed':[{base:'/current/old-threshold/mixed-threats-trial-1',kills:2}]
 };
 const cohortSelect=document.getElementById('cohort-select');
 const trialSelect=document.getElementById('trial-select');
