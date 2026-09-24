@@ -1,6 +1,6 @@
 {
-  "protocol": "pixel-only four-zombie goal-reset regression check",
-  "note": "One run per condition; Minecraft mob AI remains stochastic. No conclusion of four-zombie clearance.",
+  "protocol": "pixel-only four-zombie goal stability and lower-body SAM mask pilots",
+  "note": "One run per listed trial; Minecraft mob AI varies despite the shared seed. The lower-body check cleared one of three repeats, survived with three kills once, and died without a kill once. These are not win-rate estimates.",
   "runs": [
     {
       "id": "id-refresh",
@@ -39,6 +39,63 @@
       "health": 4.49,
       "video": "/regression/stable-goal.mp4",
       "masks_video": "/regression/stable-goal-masks.mp4"
+    },
+    {
+      "id": "blue-trousers-pilot",
+      "label": "Stable goal and lower-body color check, run 1",
+      "job_id": 29482980,
+      "source_commit": "b810fb8",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3 assisted",
+      "world_and_policy_seed": 2002956061,
+      "steps": 400,
+      "status": "steps_complete",
+      "kills": {
+        "zombie": 4
+      },
+      "cleared_alive": true,
+      "clear_step": 293,
+      "target_steps": 296,
+      "scan_steps": 85,
+      "health": 12.86,
+      "video": "/regression/blue-trousers-pilot.mp4",
+      "masks_video": "/regression/blue-trousers-pilot-masks.mp4"
+    },
+    {
+      "id": "blue-trousers-repeat-2",
+      "label": "Stable goal and lower-body color check, run 2",
+      "job_id": 29483071,
+      "source_commit": "b810fb8",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3 assisted",
+      "world_and_policy_seed": 2002956061,
+      "steps": 400,
+      "status": "steps_complete",
+      "kills": {
+        "zombie": 3
+      },
+      "cleared_alive": false,
+      "target_steps": 379,
+      "scan_steps": 0,
+      "health": 4.03
+    },
+    {
+      "id": "blue-trousers-repeat-3",
+      "label": "Stable goal and lower-body color check, run 3",
+      "job_id": 29483072,
+      "source_commit": "b810fb8",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3 assisted",
+      "world_and_policy_seed": 2002956061,
+      "steps": 330,
+      "status": "player_died",
+      "kills": {
+        "zombie": 0
+      },
+      "cleared_alive": false,
+      "target_steps": 269,
+      "scan_steps": 37,
+      "health": 0
     }
   ]
 }
