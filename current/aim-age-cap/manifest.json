@@ -1,0 +1,83 @@
+{
+  "source": "50b9a77",
+  "seed": 2002956061,
+  "setting": "SAM 3 startup mask rule, 0.75-second visual-aim age cap, nearest visible target",
+  "model_inputs": [
+    "screen pixels",
+    "prior actions",
+    "screen-derived segmentation"
+  ],
+  "evaluator_only": [
+    "simulator health",
+    "damage",
+    "kill counters"
+  ],
+  "runs": [
+    {
+      "scenario": "mixed-threats",
+      "trial": 1,
+      "hpc_job": 29485276,
+      "steps": 400,
+      "kills": {
+        "zombie": 2,
+        "skeleton": 1
+      },
+      "death": false,
+      "final_health": 1.01,
+      "minimum_recorded_health": 0.0067,
+      "target_steps": 400,
+      "scan_steps": 0,
+      "kill_steps": [
+        279,
+        306,
+        328
+      ],
+      "screen_recording": "mixed-threats-trial-1.mp4",
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+    },
+    {
+      "scenario": "mixed-threats",
+      "trial": 2,
+      "hpc_job": 29485277,
+      "steps": 400,
+      "kills": {
+        "zombie": 2,
+        "skeleton": 1
+      },
+      "death": false,
+      "final_health": 17.94,
+      "minimum_recorded_health": 16.27,
+      "target_steps": 261,
+      "scan_steps": 139,
+      "kill_steps": [
+        121,
+        192,
+        231
+      ],
+      "screen_recording": "mixed-threats-trial-2.mp4",
+      "segmentation_recording": "mixed-threats-trial-2-masks.mp4"
+    },
+    {
+      "scenario": "mixed-threats",
+      "trial": 3,
+      "hpc_job": 29485278,
+      "steps": 400,
+      "kills": {
+        "zombie": 2,
+        "skeleton": 1
+      },
+      "death": false,
+      "final_health": 10.75,
+      "minimum_recorded_health": 9.75,
+      "target_steps": 356,
+      "scan_steps": 44,
+      "kill_steps": [
+        230,
+        288,
+        321
+      ],
+      "screen_recording": "mixed-threats-trial-3.mp4",
+      "segmentation_recording": "mixed-threats-trial-3-masks.mp4"
+    }
+  ]
+}
