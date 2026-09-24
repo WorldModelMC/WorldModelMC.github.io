@@ -6,6 +6,7 @@
       "label": "Four zombies",
       "equipment": "No skeletons",
       "versions": [
+        "four-hybrid-sam3-sam2",
         "four-startup",
         "four-threshold",
         "four-r2-native",
@@ -876,6 +877,26 @@
       "visual_aim_age": "0.75 seconds",
       "source": "8a2b8de",
       "status": "HPC runs queued",
+      "runs": []
+    },
+    "four-hybrid-sam3-sam2": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u2192 SAM 2 tracking \u00b7 pilot",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text prompt discovers initial zombies; their pixel masks seed SAM 2 camera tracking. No manual points.",
+      "targeting": "Nearest visible tracked mask using screen-mask proximity",
+      "changes": [
+        "One initial SAM 3 detection from rendered pixels",
+        "SAM 2 tracks those initial masks across later frames",
+        "No automatic rediscovery if tracking loses every mask",
+        "Nearest visible target supervisor",
+        "Input locks, mask aiming, attack timing, reactive attacks"
+      ],
+      "detector_threshold": "SAM 3 initial 0.10; SAM 2 tracking masks have no calibrated confidence",
+      "visual_aim_age": "No age cap",
+      "source": "eac9b45",
+      "status": "HPC pilot queued (job 29486914)",
       "runs": []
     }
   },
