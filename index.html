@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Minecraft combat recordings</title>
 <style>
-:root{color-scheme:dark;font:16px/1.5 system-ui,-apple-system,sans-serif;background:#0d151d;color:#e7f0f4}*{box-sizing:border-box}body{margin:0}a{color:#80d0ec}a:hover{text-decoration-thickness:2px}nav{padding:14px max(20px,calc((100vw - 1100px)/2));border-bottom:1px solid #304250;background:#111e27}nav strong{font-size:18px}main{max-width:1100px;margin:auto;padding:32px 20px 80px}h1{font-size:clamp(28px,4vw,42px);margin:0 0 18px}h2{font-size:23px;margin:0 0 12px}h3{font-size:17px;margin:0 0 8px}p{margin:0 0 14px;color:#b5c7d0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:#77cfbb;font-weight:700;font-size:12px;margin:0 0 10px}.panel,.card{border:1px solid #34505b;background:#15242d;border-radius:12px;padding:20px}.panel{margin:20px 0 30px}.toc{margin:0;padding-left:24px;columns:2}.toc li{margin:8px 20px 8px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card p:last-child{margin:0}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:680px}th,td{padding:12px;text-align:left;border-bottom:1px solid #304751;font-variant-numeric:tabular-nums}th{color:#a9c2cc;font-weight:600}td:first-child{font-weight:600}.note{font-size:14px}.recordings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.recording{border:1px solid #34505b;border-radius:10px;padding:14px;background:#10202a}.recording video{display:block;width:100%;background:#000;border-radius:6px}.recording p{font-size:14px}.controls{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:0 0 16px}.controls label{cursor:pointer}.controls button{padding:8px 14px;background:#1e5663;color:#e7f0f4;border:1px solid #71afbb;border-radius:6px;cursor:pointer}dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0}dt{color:#a9c2cc}dd{margin:0}@media(max-width:750px){.grid,.recordings{grid-template-columns:1fr}.toc{columns:1}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
+:root{color-scheme:dark;font:16px/1.5 system-ui,-apple-system,sans-serif;background:#0d151d;color:#e7f0f4}*{box-sizing:border-box}body{margin:0}a{color:#80d0ec}a:hover{text-decoration-thickness:2px}nav{padding:14px max(20px,calc((100vw - 1100px)/2));border-bottom:1px solid #304250;background:#111e27}nav strong{font-size:18px}main{max-width:1100px;margin:auto;padding:32px 20px 80px}h1{font-size:clamp(28px,4vw,42px);margin:0 0 18px}h2{font-size:23px;margin:0 0 12px}h3{font-size:17px;margin:0 0 8px}p{margin:0 0 14px;color:#b5c7d0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:#77cfbb;font-weight:700;font-size:12px;margin:0 0 10px}.panel,.card{border:1px solid #34505b;background:#15242d;border-radius:12px;padding:20px}.panel{margin:20px 0 30px}.toc{margin:0;padding-left:24px;columns:2}.toc li{margin:8px 20px 8px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card p:last-child{margin:0}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:680px}th,td{padding:12px;text-align:left;border-bottom:1px solid #304751;font-variant-numeric:tabular-nums}th{color:#a9c2cc;font-weight:600}td:first-child{font-weight:600}.note{font-size:14px}#trial-video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:8px}.video-links{margin-top:12px}.controls{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:0 0 16px}.controls label{cursor:pointer}.controls select{display:block;margin-top:5px;padding:8px 12px;background:#10202a;color:#e7f0f4;border:1px solid #71afbb;border-radius:6px;font:inherit}dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0}dt{color:#a9c2cc}dd{margin:0}@media(max-width:750px){.grid{grid-template-columns:1fr}.toc{columns:1}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
 </style>
 </head>
 <body>
@@ -28,7 +28,7 @@
 <section class="panel" id="scenario-counts">
 <h2>Scenario counts</h2>
 <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>Runs</th><th>Clears</th><th>Kills per run</th><th>Videos on this page</th></tr></thead><tbody>
-<tr><td><a href="#four-zombie-results">Four zombies</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>2</td></tr>
+<tr><td><a href="#four-zombie-results">Four zombies</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>3</td></tr>
 <tr><td><a href="#two-skeletons">Two skeletons</a></td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
 <tr><td><a href="#mixed-threats">Two zombies + one skeleton</a></td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
 </tbody></table></div>
@@ -43,12 +43,12 @@
 </section>
 <section class="panel" id="recordings">
 <h2>Recordings</h2>
-<div class="controls"><label><input id="show-masks" type="checkbox" checked> Show segmentation</label><button id="play-all" type="button">Play all available</button></div>
-<div class="recordings" id="videos">
-<article class="recording"><h3>Run 1 · 4 kills</h3><video controls preload="metadata" playsinline data-base="/regression/blue-trousers-pilot" src="/regression/blue-trousers-pilot-masks.mp4" aria-label="Run 1 with SAM 3 segmentation"></video><p><a href="/regression/blue-trousers-pilot.mp4">Screen recording</a> · <a href="/regression/blue-trousers-pilot-masks.mp4">Segmentation recording</a></p></article>
-<article class="recording"><h3>Run 2 · 3 kills</h3><p>Video: —</p></article>
-<article class="recording"><h3>Run 3 · 0 kills</h3><video controls preload="metadata" playsinline src="/regression/blue-trousers-repeat-3.mp4" aria-label="Run 3 raw screen recording"></video><p><a href="/regression/blue-trousers-repeat-3.mp4">Screen recording</a> · Segmentation recording: —</p></article>
+<div class="controls">
+<label for="trial-select">Trial <select id="trial-select"><option value="1">Trial 1 · 4 kills</option><option value="2">Trial 2 · 3 kills</option><option value="3">Trial 3 · 0 kills</option></select></label>
+<label><input id="show-masks" type="checkbox" checked> Show segmentation</label>
 </div>
+<video id="trial-video" controls preload="metadata" playsinline src="/regression/blue-trousers-pilot-masks.mp4" aria-label="Trial 1 with SAM 3 segmentation"></video>
+<p class="note video-links"><a id="screen-link" href="/regression/blue-trousers-pilot.mp4">Screen recording</a> · <a id="masks-link" href="/regression/blue-trousers-pilot-masks.mp4">Segmentation recording</a></p>
 </section>
 <section class="panel" id="detector-metrics">
 <h2>Detector and camera metrics</h2>
@@ -67,7 +67,23 @@
 <section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Controller source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd></dl></section>
 </main>
 <script>
-const toggle=document.getElementById('show-masks');const videos=[...document.querySelectorAll('#videos video')];toggle.addEventListener('change',()=>{for(const video of videos){if(!video.dataset.base)continue;const time=video.currentTime,playing=!video.paused;video.src=`${video.dataset.base}${toggle.checked?'-masks':''}.mp4`;video.addEventListener('loadedmetadata',()=>{video.currentTime=Math.min(time,video.duration||time);if(playing)video.play().catch(()=>{});},{once:true})}});document.getElementById('play-all').addEventListener('click',async()=>{const button=document.getElementById('play-all');if(videos.some(video=>video.paused)){await Promise.all(videos.map(video=>video.play().catch(()=>{})));button.textContent='Pause all'}else{videos.forEach(video=>video.pause());button.textContent='Play all available'}});
+const trials={1:{base:'/regression/blue-trousers-pilot',kills:4},2:{base:'/regression/blue-trousers-repeat-2',kills:3},3:{base:'/regression/blue-trousers-repeat-3',kills:0}};
+const trialSelect=document.getElementById('trial-select');
+const maskToggle=document.getElementById('show-masks');
+const video=document.getElementById('trial-video');
+function selectVideo(keepTime){
+  const trial=trials[trialSelect.value];
+  const time=keepTime?video.currentTime:0;
+  const playing=keepTime&&!video.paused;
+  video.pause();
+  video.src=`${trial.base}${maskToggle.checked?'-masks':''}.mp4`;
+  video.setAttribute('aria-label',`Trial ${trialSelect.value}: ${trial.kills} kills${maskToggle.checked?' with SAM 3 segmentation':''}`);
+  document.getElementById('screen-link').href=`${trial.base}.mp4`;
+  document.getElementById('masks-link').href=`${trial.base}-masks.mp4`;
+  if(keepTime)video.addEventListener('loadedmetadata',()=>{video.currentTime=Math.min(time,video.duration||time);if(playing)video.play().catch(()=>{});},{once:true});
+}
+trialSelect.addEventListener('change',()=>selectVideo(false));
+maskToggle.addEventListener('change',()=>selectVideo(true));
 </script>
 </body>
 </html>

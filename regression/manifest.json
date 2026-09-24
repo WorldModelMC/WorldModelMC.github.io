@@ -76,7 +76,9 @@
       "cleared_alive": false,
       "target_steps": 379,
       "scan_steps": 0,
-      "health": 4.03
+      "health": 4.03,
+      "video": "/regression/blue-trousers-repeat-2.mp4",
+      "masks_video": "/regression/blue-trousers-repeat-2-masks.mp4"
     },
     {
       "id": "blue-trousers-repeat-3",
@@ -95,7 +97,8 @@
       "target_steps": 269,
       "scan_steps": 37,
       "health": 0,
-      "video": "/regression/blue-trousers-repeat-3.mp4"
+      "video": "/regression/blue-trousers-repeat-3.mp4",
+      "masks_video": "/regression/blue-trousers-repeat-3-masks.mp4"
     }
   ],
   "same_version_group": {
