@@ -1,0 +1,73 @@
+{
+  "inference": {
+    "gpu": "NVIDIA A100-PCIE-40GB",
+    "torch": "2.5.1+cu124",
+    "precision": "torch.float32",
+    "frames_checked": 40,
+    "max_guided_logit_error": 0.0,
+    "results": {
+      "baseline": [
+        {
+          "p50_ms": 106.42146001919173,
+          "p95_ms": 106.98800408863463,
+          "mean_ms": 101.68326349909572,
+          "calls_70_actions": {
+            "rgb": 280,
+            "mask": 140
+          }
+        },
+        {
+          "p50_ms": 106.38486800598912,
+          "p95_ms": 107.01727418781957,
+          "mean_ms": 102.14477190068767,
+          "calls_70_actions": {
+            "rgb": 280,
+            "mask": 140
+          }
+        }
+      ],
+      "cached": [
+        {
+          "p50_ms": 55.718720992445014,
+          "p95_ms": 56.10711550543783,
+          "mean_ms": 55.69711707018239,
+          "calls_70_actions": {
+            "rgb": 72,
+            "mask": 2
+          }
+        },
+        {
+          "p50_ms": 55.713552501401864,
+          "p95_ms": 56.04633605689742,
+          "mean_ms": 55.666748133080546,
+          "calls_70_actions": {
+            "rgb": 72,
+            "mask": 2
+          }
+        }
+      ]
+    }
+  },
+  "live": {
+    "baseline": {
+      "wall_seconds": 29.68983497499721,
+      "steps_per_second": 6.062681054023504,
+      "stage_mean_ms": {
+        "control": 105.83227515282275,
+        "recording": 10.01615459921167,
+        "environment": 41.386743507053545,
+        "diagnostics": 3.2029269297388105
+      }
+    },
+    "cached": {
+      "wall_seconds": 21.01072558099986,
+      "steps_per_second": 8.56705301804404,
+      "stage_mean_ms": {
+        "control": 57.049474918098625,
+        "recording": 9.977688758996972,
+        "environment": 42.59468649346245,
+        "diagnostics": 3.3803522882996786
+      }
+    }
+  }
+}

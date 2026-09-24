@@ -1,0 +1,32 @@
+{
+  "scenario": "four-zombies",
+  "policy": "rocket3",
+  "condition": "native",
+  "steps": 316,
+  "status": "player_died",
+  "kills": {
+    "zombie": 0
+  },
+  "deaths": 1,
+  "cleared_alive": false,
+  "final_metrics": {
+    "health": 20.0,
+    "food_level": 20,
+    "damage_dealt": {},
+    "kill_entity": {},
+    "custom": {
+      "jump": 12,
+      "time_since_rest": 4,
+      "damage_dealt": 69,
+      "play_one_minute": 436,
+      "deaths": 1,
+      "damage_taken": 350,
+      "time_since_death": 0,
+      "walk_one_cm": 1018,
+      "fly_one_cm": 687
+    }
+  },
+  "target_steps": 36,
+  "scan_steps": 280,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}

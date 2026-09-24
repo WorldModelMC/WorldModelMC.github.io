@@ -1,0 +1,24 @@
+{
+  "scenario": "mixed-threats",
+  "policy": "rocket2",
+  "steps": 600,
+  "status": "steps_complete",
+  "kills": {
+    "skeleton": 1,
+    "zombie": 1
+  },
+  "deaths": 0,
+  "cleared_alive": false,
+  "final_metrics": {
+    "health": 8.166667,
+    "food_level": 20,
+    "damage_dealt": {},
+    "kill_entity": {
+      "skeleton": 1,
+      "zombie": 1
+    }
+  },
+  "target_steps": 159,
+  "scan_steps": 441,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}

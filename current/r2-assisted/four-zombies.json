@@ -1,0 +1,20 @@
+{
+  "scenario": "four-zombies",
+  "policy": "rocket2",
+  "steps": 600,
+  "status": "steps_complete",
+  "kills": {
+    "zombie": 0
+  },
+  "deaths": 0,
+  "cleared_alive": false,
+  "final_metrics": {
+    "health": 13.666667,
+    "food_level": 20,
+    "damage_dealt": {},
+    "kill_entity": {}
+  },
+  "target_steps": 45,
+  "scan_steps": 555,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}

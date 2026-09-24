@@ -1,0 +1,143 @@
+{
+  "precision": {
+    "fp32": {
+      "p50_ms": 36.590953008271754,
+      "p95_ms": 37.24529531318694,
+      "max_logit_delta": 0,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "tf32": {
+      "p50_ms": 36.92474000854418,
+      "p95_ms": 43.80246056971372,
+      "max_logit_delta": 0.009779930114746094,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "bf16": {
+      "p50_ms": 37.39301751193125,
+      "p95_ms": 44.03280949773034,
+      "max_logit_delta": 0.26660728454589844,
+      "exact_action_frames": 89,
+      "frames": 90
+    }
+  },
+  "threads": {
+    "threads4": {
+      "p50_ms": 64.31359100679401,
+      "p95_ms": 104.91779814619804,
+      "max_logit_delta": 0,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "threads1": {
+      "p50_ms": 63.873649516608566,
+      "p95_ms": 105.68356524890987,
+      "max_logit_delta": 0.0,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "threads2": {
+      "p50_ms": 64.09603901556693,
+      "p95_ms": 105.01464073167881,
+      "max_logit_delta": 0.0,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "threads4-repeat": {
+      "p50_ms": 64.14270849199966,
+      "p95_ms": 105.51309066213433,
+      "max_logit_delta": 0.0,
+      "exact_action_frames": 90,
+      "frames": 90
+    }
+  },
+  "live": {
+    "sync": {
+      "wall_seconds": 20.457427908986574,
+      "steps_per_second": 8.79876007877458,
+      "stage_mean_ms": {
+        "control": 54.224802199442976,
+        "recording": 9.81579074064297,
+        "environment": 44.47778407723971,
+        "diagnostics": 1.1221929175970966
+      }
+    },
+    "async": {
+      "wall_seconds": 32.8774693540181,
+      "steps_per_second": 5.474873934541479,
+      "stage_mean_ms": {
+        "control": 131.64393029463315,
+        "recording": 0.20785073934615975,
+        "environment": 43.43425148450906,
+        "diagnostics": 1.0899593512637211
+      }
+    }
+  },
+  "compilation": {
+    "fp32": {
+      "first_action_ms": 733.6379260232206,
+      "p50_ms": 86.52112298295833,
+      "p95_ms": 87.089452049986,
+      "max_logit_delta": 0,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "compiled": {
+      "first_action_ms": 17105.63120400184,
+      "p50_ms": 85.40198350965511,
+      "p95_ms": 86.03520559845492,
+      "max_logit_delta": 2.288818359375e-05,
+      "exact_action_frames": 90,
+      "frames": 90
+    },
+    "fp32-repeat": {
+      "first_action_ms": 123.32478299504146,
+      "p50_ms": 86.55952599656302,
+      "p95_ms": 164.21113100950598,
+      "max_logit_delta": 0.0,
+      "exact_action_frames": 90,
+      "frames": 90
+    }
+  },
+  "diagnostics": {
+    "old": {
+      "trials_mean_ms": [
+        3.9150805899407715,
+        3.9593641950341407,
+        3.8590057849069126
+      ],
+      "mean_ms": 3.9111501899606083
+    },
+    "integer_buffer": {
+      "trials_mean_ms": [
+        0.7485127849213313,
+        0.7369272799405735,
+        0.741574250132544
+      ],
+      "mean_ms": 0.7423381049981496
+    }
+  },
+  "interleaved": {
+    "blocking": {
+      "steps": 80,
+      "mean_step_ms": 197.80028289933398,
+      "stage_mean_ms": {
+        "control": 146.7236735381448,
+        "recording": 6.475279287042213,
+        "environment": 43.49351561322692,
+        "diagnostics": 1.1117067355371546
+      }
+    },
+    "background": {
+      "steps": 80,
+      "mean_step_ms": 205.62117290137394,
+      "stage_mean_ms": {
+        "control": 161.46368086301663,
+        "recording": 0.21660770071321167,
+        "environment": 42.827544061947265,
+        "diagnostics": 1.1170353507623076
+      }
+    }
+  }
+}

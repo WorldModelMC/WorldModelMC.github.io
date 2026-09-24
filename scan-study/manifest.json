@@ -1,0 +1,15 @@
+{
+  "scenario": "four-zombies",
+  "policy": "ROCKET-3 assisted",
+  "world_and_policy_seed": 2002956061,
+  "maximum_steps": 400,
+  "input_boundary": "rendered screen pixels, SAM 3 detections on those pixels, and previous executed actions; simulator state excluded from control",
+  "detector_and_controller_score_cutoff": 0.25,
+  "result_note": "One run per variant; the final run never entered scan mode, so the stronger outcome cannot be attributed to pitch recovery.",
+  "variants": {
+    "no-spin": {"job_id": 29479054, "source_commit": "fc97ddf", "scan_degrees": 0, "scan_delay_seconds": 0, "lost_grace_seconds": 4, "pitch_recovery": false, "large_search_turns": 0},
+    "delayed-3s": {"job_id": 29479055, "source_commit": "fc97ddf", "scan_degrees": 60, "scan_delay_seconds": 3, "lost_grace_seconds": 4, "pitch_recovery": false, "large_search_turns": 3},
+    "delayed-6s": {"job_id": 29479056, "source_commit": "fc97ddf", "scan_degrees": 60, "scan_delay_seconds": 6, "lost_grace_seconds": 6, "pitch_recovery": false, "large_search_turns": 7},
+    "delayed-3s-level": {"job_id": 29479114, "source_commit": "4f3f16c", "scan_degrees": 60, "scan_delay_seconds": 3, "lost_grace_seconds": 4, "pitch_recovery": true, "large_search_turns": 0}
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "protocol": "pixel-only four-zombie goal-reset regression check",
+  "note": "One run per condition; Minecraft mob AI remains stochastic. No conclusion of four-zombie clearance.",
+  "runs": [
+    {
+      "id": "id-refresh",
+      "label": "Reset on each detector ID",
+      "job_id": 29482356,
+      "source_commit": "baa2f39",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3 assisted",
+      "world_and_policy_seed": 2002956061,
+      "steps": 316,
+      "status": "player_died",
+      "kills": {
+        "zombie": 0
+      },
+      "target_steps": 87,
+      "scan_steps": 202,
+      "health": 0,
+      "video": "/regression/id-refresh.mp4",
+      "masks_video": "/regression/id-refresh-masks.mp4"
+    },
+    {
+      "id": "stable-goal",
+      "label": "Keep goal stable for zombie class",
+      "job_id": 29482573,
+      "source_commit": "266707d",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3 assisted",
+      "world_and_policy_seed": 2002956061,
+      "steps": 400,
+      "status": "steps_complete",
+      "kills": {
+        "zombie": 2
+      },
+      "target_steps": 340,
+      "scan_steps": 18,
+      "health": 4.49,
+      "video": "/regression/stable-goal.mp4",
+      "masks_video": "/regression/stable-goal-masks.mp4"
+    }
+  ]
+}

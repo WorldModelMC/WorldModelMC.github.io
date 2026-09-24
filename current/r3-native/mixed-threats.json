@@ -1,0 +1,32 @@
+{
+  "scenario": "mixed-threats",
+  "policy": "rocket3",
+  "condition": "native",
+  "steps": 262,
+  "status": "player_died",
+  "kills": {
+    "skeleton": 0,
+    "zombie": 0
+  },
+  "deaths": 1,
+  "cleared_alive": false,
+  "final_metrics": {
+    "health": 20.0,
+    "food_level": 20,
+    "damage_dealt": {},
+    "kill_entity": {},
+    "custom": {
+      "jump": 10,
+      "time_since_rest": 4,
+      "play_one_minute": 380,
+      "deaths": 1,
+      "damage_taken": 339,
+      "time_since_death": 0,
+      "walk_one_cm": 1915,
+      "fly_one_cm": 1015
+    }
+  },
+  "target_steps": 74,
+  "scan_steps": 188,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}

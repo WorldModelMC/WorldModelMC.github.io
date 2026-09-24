@@ -1,0 +1,35 @@
+{
+  "scenario": "two-skeletons",
+  "policy": "rocket3",
+  "condition": "native",
+  "steps": 600,
+  "status": "steps_complete",
+  "kills": {
+    "skeleton": 2
+  },
+  "deaths": 0,
+  "cleared_alive": true,
+  "final_metrics": {
+    "health": 8.166664,
+    "food_level": 17,
+    "damage_dealt": {},
+    "kill_entity": {
+      "skeleton": 2
+    },
+    "custom": {
+      "jump": 15,
+      "time_since_rest": 713,
+      "damage_dealt": 380,
+      "play_one_minute": 713,
+      "sprint_one_cm": 520,
+      "damage_taken": 256,
+      "time_since_death": 713,
+      "walk_one_cm": 2174,
+      "mob_kills": 2,
+      "fly_one_cm": 1090
+    }
+  },
+  "target_steps": 324,
+  "scan_steps": 276,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}

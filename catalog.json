@@ -1,0 +1,33 @@
+{
+  "best": "highlights",
+  "runs": [
+    {
+      "id": "highlights",
+      "title": "Start here \u00b7 12-second tour",
+      "heading": "Two useful examples, with different levels of help",
+      "input": "First half: SAM 2 gets points chosen by Codex. Second half: SAM 3.1 gets object names only.",
+      "watch": "First, watch the colored cow mask follow the animal. Then watch SAM 3.1 select trees and grass while leaving the cow unmarked."
+    },
+    {
+      "id": "sam2",
+      "title": "SAM 2 \u00b7 Given points to follow",
+      "heading": "Can SAM 2 follow an object once we point it out?",
+      "input": "Codex supplied four points on the first frame: cow, tree, grass and sword. The model then followed the selected areas.",
+      "watch": "The cow mask fits well at first. The \u201csword\u201d mask covers only a small patch, and some masks disappear as the view changes. This tests assisted tracking, not recognition from words."
+    },
+    {
+      "id": "sam31",
+      "title": "SAM 3.1 \u00b7 Asked to find objects by name",
+      "heading": "Can SAM 3.1 find and follow objects from words?",
+      "input": "Only the words \u201ccow\u201d, \u201ctree\u201d, \u201cgrass\u201d and \u201csword\u201d. No points or masks were supplied.",
+      "watch": "It selects trees and grassy terrain. It does not select the cow or sword in this clip, even while the cow is clearly visible."
+    },
+    {
+      "id": "sam3",
+      "title": "SAM 3 \u00b7 Asked to identify each frame",
+      "heading": "What does SAM 3 recognize in each image?",
+      "input": "The same four words, applied to each frame separately. Matching between frames is simple and can change object IDs.",
+      "watch": "It selects trees and grass, but watch the \u201csword\u201d label: it initially marks the inventory icon instead of the held sword. The cow is almost always missed."
+    }
+  ]
+}

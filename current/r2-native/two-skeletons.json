@@ -1,0 +1,23 @@
+{
+  "scenario": "two-skeletons",
+  "policy": "rocket2",
+  "condition": "native",
+  "steps": 600,
+  "status": "steps_complete",
+  "kills": {
+    "skeleton": 2
+  },
+  "deaths": 0,
+  "cleared_alive": true,
+  "final_metrics": {
+    "health": 19.999996,
+    "food_level": 17,
+    "damage_dealt": {},
+    "kill_entity": {
+      "skeleton": 2
+    }
+  },
+  "target_steps": 435,
+  "scan_steps": 165,
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+}
