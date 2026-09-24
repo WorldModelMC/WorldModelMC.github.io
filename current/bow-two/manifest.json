@@ -1,0 +1,101 @@
+{
+  "source_commit": "8a2b8de",
+  "scenario": "two-skeletons",
+  "mob_equipment": [
+    "bow",
+    "bow"
+  ],
+  "seed": 2002956061,
+  "conditions": {
+    "bow-two-r2-native": {
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket2-native-trial-1",
+          "kills": 2,
+          "steps": 400,
+          "hpc_job": 29486742,
+          "final_health": 18.64,
+          "deaths": 0,
+          "target_steps": 345,
+          "scan_steps": 55,
+          "wall_seconds": 65.7674
+        }
+      ]
+    },
+    "bow-two-r2-assisted": {
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket2-assisted-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486744,
+          "final_health": 15.28,
+          "deaths": 0,
+          "target_steps": 367,
+          "scan_steps": 33,
+          "wall_seconds": 72.973
+        }
+      ]
+    },
+    "bow-two-r3-native": {
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket3-native-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486745,
+          "final_health": 13.25,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0,
+          "wall_seconds": 60.0209
+        }
+      ]
+    },
+    "bow-two-r3-assisted": {
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486728,
+          "final_health": 16.61,
+          "deaths": 0,
+          "target_steps": 367,
+          "scan_steps": 33,
+          "wall_seconds": 53.0809
+        },
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-2",
+          "kills": 0,
+          "steps": 400,
+          "hpc_job": 29486729,
+          "final_health": 17.64,
+          "deaths": 0,
+          "target_steps": 355,
+          "scan_steps": 45,
+          "wall_seconds": 56.2042
+        },
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-3",
+          "kills": 0,
+          "steps": 400,
+          "hpc_job": 29486731,
+          "final_health": 9.89,
+          "deaths": 0,
+          "target_steps": 389,
+          "scan_steps": 11,
+          "wall_seconds": 56.0975
+        }
+      ]
+    }
+  }
+}

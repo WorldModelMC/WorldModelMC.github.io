@@ -757,8 +757,20 @@
       "detector_threshold": "0.10",
       "visual_aim_age": "Not applicable",
       "source": "8a2b8de",
-      "status": "HPC runs queued",
-      "runs": []
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket2-native-trial-1",
+          "kills": 2,
+          "steps": 400,
+          "hpc_job": 29486742,
+          "final_health": 18.64,
+          "deaths": 0,
+          "target_steps": 345,
+          "scan_steps": 55,
+          "wall_seconds": 65.7674
+        }
+      ]
     },
     "bow-two-r2-assisted": {
       "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 bows",
@@ -779,8 +791,20 @@
       "detector_threshold": "0.10",
       "visual_aim_age": "0.75 seconds",
       "source": "8a2b8de",
-      "status": "HPC runs queued",
-      "runs": []
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket2-assisted-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486744,
+          "final_health": 15.28,
+          "deaths": 0,
+          "target_steps": 367,
+          "scan_steps": 33,
+          "wall_seconds": 72.973
+        }
+      ]
     },
     "bow-two-r3-native": {
       "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 bows",
@@ -798,8 +822,20 @@
       "detector_threshold": "0.10",
       "visual_aim_age": "Not applicable",
       "source": "8a2b8de",
-      "status": "HPC runs queued",
-      "runs": []
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket3-native-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486745,
+          "final_health": 13.25,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0,
+          "wall_seconds": 60.0209
+        }
+      ]
     },
     "bow-two-r3-assisted": {
       "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 bows",
@@ -820,8 +856,42 @@
       "detector_threshold": "0.10",
       "visual_aim_age": "0.75 seconds",
       "source": "8a2b8de",
-      "status": "HPC runs queued",
-      "runs": []
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29486728,
+          "final_health": 16.61,
+          "deaths": 0,
+          "target_steps": 367,
+          "scan_steps": 33,
+          "wall_seconds": 53.0809
+        },
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-2",
+          "kills": 0,
+          "steps": 400,
+          "hpc_job": 29486729,
+          "final_health": 17.64,
+          "deaths": 0,
+          "target_steps": 355,
+          "scan_steps": 45,
+          "wall_seconds": 56.2042
+        },
+        {
+          "base": "/current/bow-two/rocket3-assisted-trial-3",
+          "kills": 0,
+          "steps": 400,
+          "hpc_job": 29486731,
+          "final_health": 9.89,
+          "deaths": 0,
+          "target_steps": 389,
+          "scan_steps": 11,
+          "wall_seconds": 56.0975
+        }
+      ]
     },
     "bow-mixed-r2-native": {
       "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 bows",

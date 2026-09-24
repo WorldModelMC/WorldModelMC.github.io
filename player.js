@@ -64,7 +64,7 @@ function showInfo() {
   addSourceInfo(selectedVersion.source);
   if (run) {
     addInfo('HPC job', run.hpc_job);
-    addInfo('Outcome', `${run.kills} kills · ${run.deaths} deaths · ${run.steps} steps`);
+    addInfo('Outcome', `${run.kills} ${run.kills === 1 ? 'kill' : 'kills'} · ${run.deaths} ${run.deaths === 1 ? 'death' : 'deaths'} · ${run.steps} steps`);
     addInfo('Final health', run.final_health == null ? '—' : run.final_health);
     addInfo('Target / scan steps', `${run.target_steps ?? '—'} / ${run.scan_steps ?? '—'}`);
     addInfo('Recorded wall time', run.wall_seconds == null ? '—' : `${run.wall_seconds.toFixed(1)} seconds`);
