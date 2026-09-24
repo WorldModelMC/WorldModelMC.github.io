@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Minecraft combat recordings</title>
 <style>
+[hidden]{display:none!important}
 :root{color-scheme:dark;font:16px/1.5 system-ui,-apple-system,sans-serif;background:#0d151d;color:#e7f0f4}*{box-sizing:border-box}body{margin:0}a{color:#80d0ec}a:hover{text-decoration-thickness:2px}nav{padding:14px max(20px,calc((100vw - 1100px)/2));border-bottom:1px solid #304250;background:#111e27}nav strong{font-size:18px}main{max-width:1100px;margin:auto;padding:32px 20px 80px}h1{font-size:clamp(28px,4vw,42px);margin:0 0 18px}h2{font-size:23px;margin:0 0 12px}h3{font-size:17px;margin:0 0 8px}p{margin:0 0 14px;color:#b5c7d0}.eyebrow{text-transform:uppercase;letter-spacing:.12em;color:#77cfbb;font-weight:700;font-size:12px;margin:0 0 10px}.panel,.card{border:1px solid #34505b;background:#15242d;border-radius:12px;padding:20px}.panel{margin:20px 0 30px}.toc{margin:0;padding-left:24px;columns:2}.toc li{margin:8px 20px 8px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card p:last-child{margin:0}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:680px}th,td{padding:12px;text-align:left;border-bottom:1px solid #304751;font-variant-numeric:tabular-nums}th{color:#a9c2cc;font-weight:600}td:first-child{font-weight:600}.note{font-size:14px}#trial-video{display:block;width:100%;aspect-ratio:16/9;background:#000;border-radius:8px}.video-links{margin-top:12px}.controls{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:0 0 16px}.controls label{cursor:pointer}.controls select{display:block;margin-top:5px;padding:8px 12px;background:#10202a;color:#e7f0f4;border:1px solid #71afbb;border-radius:6px;font:inherit}dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0}dt{color:#a9c2cc}dd{margin:0}@media(max-width:750px){.grid{grid-template-columns:1fr}.toc{columns:1}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
 </style>
-<style>.controls button{padding:8px 12px;background:#20505e;color:#e7f0f4;border:1px solid #71afbb;border-radius:6px;font:inherit;cursor:pointer}.controls button:hover{background:#2a6574}</style>
+<style>.controls button{padding:8px 12px;background:#20505e;color:#e7f0f4;border:1px solid #71afbb;border-radius:6px;font:inherit;cursor:pointer}.controls button:hover{background:#2a6574}.controls select{max-width:min(100%,390px)}.run-info{margin-top:18px;padding:18px;border:1px solid #34505b;border-radius:8px;background:#10202a}.run-info h3{margin:0 0 12px}.run-info dl{grid-template-columns:minmax(130px,max-content) 1fr}.run-info dd{overflow-wrap:anywhere}</style>
 </head>
 <body>
 <nav><strong>Minecraft combat recordings</strong></nav>
 <main>
-<p class="eyebrow">ROCKET-3 assisted · seed 2002956061</p>
+<p class="eyebrow">ROCKET-2 / ROCKET-3 · seed 2002956061</p>
 <h1>Run data and videos</h1>
 <section class="panel" aria-label="Table of contents">
 <h2>Contents</h2>
@@ -22,23 +23,26 @@
 <li><a href="#startup-results">Startup mask rule</a></li>
 <li><a href="#recordings">Recordings</a></li>
 <li><a href="#detector-metrics">Detector and camera metrics</a></li>
-<li><a href="#two-skeletons">Two skeletons</a></li>
-<li><a href="#mixed-threats">Mixed threats</a></li>
+<li><a href="#two-skeletons">Legacy: unarmed skeletons</a></li>
+<li><a href="#mixed-threats">Legacy: mixed unarmed</a></li>
 <li><a href="#run-files">Run files</a></li>
 </ol>
 </section>
 <section class="panel" id="scenario-counts">
 <h2>Scenario counts</h2>
+<p class="note">Bow-equipped skeleton evaluations are pending. All skeleton recordings below are legacy runs with unarmed skeletons.</p>
 <div class="tablewrap"><table><thead><tr><th>Scenario</th><th>Runs</th><th>Clears</th><th>Kills per run</th><th>Videos on this page</th></tr></thead><tbody>
 <tr><td><a href="#four-zombie-results">Four zombies · threshold 0.25, nearest</a></td><td>3</td><td>1</td><td>4, 3, 0</td><td>3</td></tr>
 <tr><td><a href="#startup-results">Four zombies · startup mask rule, nearest</a></td><td>3</td><td>2</td><td>4, 3, 4</td><td>3</td></tr>
 <tr><td><a href="#startup-results">Four zombies · startup mask rule, sticky</a></td><td>3</td><td>1</td><td>2, 2, 4</td><td>0</td></tr>
-<tr><td><a href="#two-skeletons">Two skeletons · startup mask rule, nearest</a></td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
-<tr><td><a href="#two-skeletons">Two skeletons · threshold 0.25, nearest</a></td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
-<tr><td><a href="#two-skeletons">Two skeletons · startup rule + HUD gate, nearest</a></td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
-<tr><td><a href="#mixed-threats">Two zombies + one skeleton · startup mask rule, nearest</a></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
-<tr><td><a href="#mixed-threats">Two zombies + one skeleton · threshold 0.25, nearest</a></td><td>1</td><td>0</td><td>2</td><td>1</td></tr>
-<tr><td><a href="#mixed-threats">Two zombies + one skeleton · 0.75 s aim cap, nearest</a></td><td>3</td><td>3</td><td>3, 3, 3</td><td>3</td></tr>
+<tr><td>Two skeletons with bows</td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
+<tr><td>Two zombies + bow skeleton</td><td>0</td><td>—</td><td>—</td><td>0</td></tr>
+<tr><td><a href="#two-skeletons">Legacy: two unarmed skeletons · startup rule</a></td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+<tr><td><a href="#two-skeletons">Legacy: two unarmed skeletons · threshold 0.25</a></td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><td><a href="#two-skeletons">Legacy: two unarmed skeletons · HUD gate</a></td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
+<tr><td><a href="#mixed-threats">Legacy: two zombies + unarmed skeleton · startup rule</a></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><a href="#mixed-threats">Legacy: two zombies + unarmed skeleton · threshold 0.25</a></td><td>1</td><td>0</td><td>2</td><td>1</td></tr>
+<tr><td><a href="#mixed-threats">Legacy: two zombies + unarmed skeleton · 0.75 s aim cap</a></td><td>3</td><td>3</td><td>3, 3, 3</td><td>3</td></tr>
 </tbody></table></div>
 </section>
 <section class="panel" id="four-zombie-results">
@@ -63,13 +67,16 @@
 <section class="panel" id="recordings">
 <h2>Recordings</h2>
 <div class="controls">
-<label for="cohort-select">Scenario and setting <select id="cohort-select"><option value="capped-mixed">Two zombies + one skeleton · 0.75 s aim cap, nearest</option><option value="startup-four">Four zombies · startup mask rule, nearest</option><option value="baseline-four">Four zombies · threshold 0.25, nearest</option><option value="hud-skeleton">Two skeletons · startup rule + HUD gate, nearest</option><option value="startup-skeleton">Two skeletons · startup mask rule, nearest</option><option value="baseline-skeleton">Two skeletons · threshold 0.25, nearest</option><option value="startup-mixed">Two zombies + one skeleton · startup mask rule, nearest</option><option value="baseline-mixed">Two zombies + one skeleton · threshold 0.25, nearest</option></select></label>
+<label for="scenario-select">Scenario <select id="scenario-select"></select></label>
+<label for="version-select">Model and setup <select id="version-select"></select></label>
 <label for="trial-select">Trial <select id="trial-select"></select></label>
 <label><input id="show-masks" type="checkbox" checked> Show segmentation</label>
 <button id="play-all" type="button">Play all trials</button>
 </div>
 <video id="trial-video" controls preload="metadata" playsinline aria-label="Selected trial"></video>
+<p id="recording-status" class="note" hidden></p>
 <p class="note video-links"><a id="screen-link" href="#">Screen recording</a> · <a id="masks-link" href="#">Segmentation recording</a></p>
+<div id="model-info" class="run-info"><h3>Selected run</h3><dl id="model-info-list"></dl><p class="note" style="margin-top:14px">SAM 2 is not used in these combat recordings. <a href="/sam.html">View the separate SAM 2 and SAM 3 tests.</a></p></div>
 </section>
 <section class="panel" id="detector-metrics">
 <h2>Detector and camera metrics</h2>
@@ -83,68 +90,20 @@
 </tbody></table></div>
 <p class="note">Detector metrics use saved pixel-based detection records. Outcome counters are read after each step and excluded from policy and controller inputs.</p>
 </section>
-<section class="panel" id="two-skeletons"><h2>Two skeletons</h2><div class="tablewrap"><table><thead><tr><th>Setting</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Final health</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody>
+<section class="panel" id="two-skeletons"><h2>Legacy: two unarmed skeletons</h2><div class="tablewrap"><table><thead><tr><th>Setting</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Final health</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody>
 <tr><td>Startup mask rule, nearest</td><td>29485195</td><td>400</td><td>1</td><td>No</td><td>5.57</td><td>400</td><td>0</td></tr>
 <tr><td>Threshold 0.25, nearest</td><td>29485210</td><td>400</td><td>2</td><td>No</td><td>20.00</td><td>212</td><td>188</td></tr>
 <tr><td>Startup rule + HUD gate, nearest</td><td>29485309</td><td>400</td><td>2</td><td>No</td><td>18.60</td><td>232</td><td>168</td></tr>
 </tbody></table></div></section>
-<section class="panel" id="mixed-threats"><h2>Two zombies + one skeleton</h2><div class="tablewrap"><table><thead><tr><th>Setting</th><th>Trial</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Final health</th><th>Minimum health</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody>
+<section class="panel" id="mixed-threats"><h2>Legacy: two zombies + one unarmed skeleton</h2><div class="tablewrap"><table><thead><tr><th>Setting</th><th>Trial</th><th>HPC job</th><th>Steps</th><th>Kills</th><th>Death</th><th>Final health</th><th>Minimum health</th><th>Target steps</th><th>Scan steps</th></tr></thead><tbody>
 <tr><td>Startup mask rule, nearest</td><td>1</td><td>29485195</td><td>336</td><td>0</td><td>Yes</td><td>—</td><td>0.08</td><td>184</td><td>152</td></tr>
 <tr><td>Threshold 0.25, nearest</td><td>1</td><td>29485210</td><td>376</td><td>1 zombie, 1 skeleton</td><td>Yes</td><td>—</td><td>0.83</td><td>356</td><td>20</td></tr>
 <tr><td>Startup rule + 0.75 s aim cap, nearest</td><td>1</td><td>29485276</td><td>400</td><td>2 zombies, 1 skeleton</td><td>No</td><td>1.01</td><td>0.0067</td><td>400</td><td>0</td></tr>
 <tr><td>Startup rule + 0.75 s aim cap, nearest</td><td>2</td><td>29485277</td><td>400</td><td>2 zombies, 1 skeleton</td><td>No</td><td>17.94</td><td>16.27</td><td>261</td><td>139</td></tr>
 <tr><td>Startup rule + 0.75 s aim cap, nearest</td><td>3</td><td>29485278</td><td>400</td><td>2 zombies, 1 skeleton</td><td>No</td><td>10.75</td><td>9.75</td><td>356</td><td>44</td></tr>
 </tbody></table></div></section>
-<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Four-zombie threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Other-scenario threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/828c438">828c438</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>HUD-gate source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/65686e2">65686e2</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier four-zombie results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>Other-scenario threshold 0.25 results</dt><dd><a href="/current/old-threshold/manifest.json">JSON manifest</a></dd><dt>Startup-rule results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd><dt>HUD-gate result</dt><dd><a href="/current/hud-gate/manifest.json">JSON manifest</a></dd><dt>0.75-second aim-cap results</dt><dd><a href="/current/aim-age-cap/manifest.json">JSON manifest</a></dd></dl></section>
+<section class="panel" id="run-files"><h2>Run files</h2><dl><dt>Four-zombie threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/b810fb8">b810fb8</a></dd><dt>Other-scenario threshold 0.25 source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/828c438">828c438</a></dd><dt>Startup-rule source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/50b9a77">50b9a77</a></dd><dt>HUD-gate source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/65686e2">65686e2</a></dd><dt>Bow-skeleton scenario source</dt><dd><a href="https://github.com/WorldModelMC/minecraft-perception-lab/commit/8a2b8de">8a2b8de</a></dd><dt>Recording catalog</dt><dd><a href="/current/player-catalog.json">JSON catalog</a></dd><dt>Seed</dt><dd>2002956061</dd><dt>Model and controller inputs</dt><dd>Rendered screen pixels, previous actions, and SAM 3 detections from those pixels</dd><dt>Outcome evaluator inputs</dt><dd>Simulator health, damage, and kill counters</dd><dt>Earlier four-zombie results</dt><dd><a href="/regression/manifest.json">JSON manifest</a></dd><dt>Other-scenario threshold 0.25 results</dt><dd><a href="/current/old-threshold/manifest.json">JSON manifest</a></dd><dt>Startup-rule results</dt><dd><a href="/current/startup-low-score/manifest.json">JSON manifest</a></dd><dt>HUD-gate result</dt><dd><a href="/current/hud-gate/manifest.json">JSON manifest</a></dd><dt>0.75-second aim-cap results</dt><dd><a href="/current/aim-age-cap/manifest.json">JSON manifest</a></dd></dl></section>
 </main>
-<script>
-const groups={
-  'capped-mixed':[{base:'/current/aim-age-cap/mixed-threats-trial-1',kills:3},{base:'/current/aim-age-cap/mixed-threats-trial-2',kills:3},{base:'/current/aim-age-cap/mixed-threats-trial-3',kills:3}],
-  'startup-four':[{base:'/current/startup-low-score/four-zombies-trial-1',kills:4},{base:'/current/startup-low-score/four-zombies-trial-2',kills:3},{base:'/current/startup-low-score/four-zombies-trial-3',kills:4}],
-  'baseline-four':[{base:'/regression/blue-trousers-pilot',kills:4},{base:'/regression/blue-trousers-repeat-2',kills:3},{base:'/regression/blue-trousers-repeat-3',kills:0}],
-  'startup-skeleton':[{base:'/current/startup-low-score/two-skeletons-trial-1',kills:1}],
-  'baseline-skeleton':[{base:'/current/old-threshold/two-skeletons-trial-1',kills:2}],
-  'hud-skeleton':[{base:'/current/hud-gate/two-skeletons-trial-1',kills:2}],
-  'startup-mixed':[{base:'/current/startup-low-score/mixed-threats-trial-1',kills:0}],
-  'baseline-mixed':[{base:'/current/old-threshold/mixed-threats-trial-1',kills:2}]
-};
-const cohortSelect=document.getElementById('cohort-select');
-const trialSelect=document.getElementById('trial-select');
-const maskToggle=document.getElementById('show-masks');
-const video=document.getElementById('trial-video');
-let playAll=false;
-function populateTrials(){
-  trialSelect.replaceChildren();
-  groups[cohortSelect.value].forEach((trial,index)=>{
-    const option=document.createElement('option');
-    option.value=String(index);
-    option.textContent=`Trial ${index+1} · ${trial.kills} ${trial.kills===1?'kill':'kills'}`;
-    trialSelect.append(option);
-  });
-}
-function selectVideo(keepTime=false,autoplay=false){
-  const trial=groups[cohortSelect.value][Number(trialSelect.value)];
-  const time=keepTime?video.currentTime:0;
-  const playing=keepTime&&!video.paused;
-  video.pause();
-  video.src=`${trial.base}${maskToggle.checked?'-masks':''}.mp4`;
-  video.setAttribute('aria-label',`${cohortSelect.selectedOptions[0].textContent}, trial ${Number(trialSelect.value)+1}: ${trial.kills} kills${maskToggle.checked?' with SAM 3 segmentation':''}`);
-  document.getElementById('screen-link').href=`${trial.base}.mp4`;
-  document.getElementById('masks-link').href=`${trial.base}-masks.mp4`;
-  if(keepTime||autoplay)video.addEventListener('loadedmetadata',()=>{if(keepTime)video.currentTime=Math.min(time,video.duration||time);if(playing||autoplay)video.play().catch(()=>{});},{once:true});
-}
-cohortSelect.addEventListener('change',()=>{playAll=false;populateTrials();selectVideo()});
-trialSelect.addEventListener('change',()=>{playAll=false;selectVideo()});
-maskToggle.addEventListener('change',()=>selectVideo(true));
-document.getElementById('play-all').addEventListener('click',()=>{playAll=true;trialSelect.value='0';selectVideo(false,true)});
-video.addEventListener('ended',()=>{
-  if(!playAll)return;
-  const next=Number(trialSelect.value)+1;
-  if(next>=groups[cohortSelect.value].length){playAll=false;return}
-  trialSelect.value=String(next);
-  selectVideo(false,true);
-});
-populateTrials();selectVideo();
-</script>
+<script src="/player.js" defer></script>
 </body>
 </html>

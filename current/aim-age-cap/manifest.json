@@ -33,7 +33,12 @@
         328
       ],
       "screen_recording": "mixed-threats-trial-1.mp4",
-      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "mixed-threats",
@@ -55,7 +60,12 @@
         231
       ],
       "screen_recording": "mixed-threats-trial-2.mp4",
-      "segmentation_recording": "mixed-threats-trial-2-masks.mp4"
+      "segmentation_recording": "mixed-threats-trial-2-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "mixed-threats",
@@ -77,7 +87,13 @@
         321
       ],
       "screen_recording": "mixed-threats-trial-3.mp4",
-      "segmentation_recording": "mixed-threats-trial-3-masks.mp4"
+      "segmentation_recording": "mixed-threats-trial-3-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none"
+      ]
     }
-  ]
+  ],
+  "skeleton_equipment": "none (legacy unarmed skeleton scenarios)"
 }

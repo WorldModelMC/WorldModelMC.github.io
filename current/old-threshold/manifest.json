@@ -26,7 +26,11 @@
       "target_steps": 212,
       "scan_steps": 188,
       "screen_recording": "two-skeletons-trial-1.mp4",
-      "segmentation_recording": "two-skeletons-trial-1-masks.mp4"
+      "segmentation_recording": "two-skeletons-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "mixed-threats",
@@ -42,7 +46,13 @@
       "target_steps": 356,
       "scan_steps": 20,
       "screen_recording": "mixed-threats-trial-1.mp4",
-      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none"
+      ]
     }
-  ]
+  ],
+  "skeleton_equipment": "none (legacy unarmed skeleton scenarios)"
 }

@@ -1,0 +1,884 @@
+{
+  "seed": 2002956061,
+  "scenarios": [
+    {
+      "id": "four-zombies",
+      "label": "Four zombies",
+      "equipment": "No skeletons",
+      "versions": [
+        "four-startup",
+        "four-threshold",
+        "four-r2-native",
+        "four-r2-assisted",
+        "four-r3-native",
+        "four-r3-assisted"
+      ]
+    },
+    {
+      "id": "bow-two",
+      "label": "Two skeletons with bows",
+      "equipment": "Both skeletons carry bows",
+      "versions": [
+        "bow-two-r3-assisted",
+        "bow-two-r3-native",
+        "bow-two-r2-assisted",
+        "bow-two-r2-native"
+      ]
+    },
+    {
+      "id": "bow-mixed",
+      "label": "Two zombies + bow skeleton",
+      "equipment": "Skeleton carries a bow",
+      "versions": [
+        "bow-mixed-r3-assisted",
+        "bow-mixed-r3-native",
+        "bow-mixed-r2-assisted",
+        "bow-mixed-r2-native"
+      ]
+    },
+    {
+      "id": "legacy-two",
+      "label": "Legacy: two unarmed skeletons",
+      "equipment": "Skeletons have no bows",
+      "versions": [
+        "legacy-two-hud",
+        "legacy-two-threshold",
+        "legacy-two-startup",
+        "legacy-two-r2-native",
+        "legacy-two-r2-assisted",
+        "legacy-two-r3-native",
+        "legacy-two-r3-assisted"
+      ]
+    },
+    {
+      "id": "legacy-mixed",
+      "label": "Legacy: two zombies + unarmed skeleton",
+      "equipment": "Skeleton has no bow",
+      "versions": [
+        "legacy-mixed-cap",
+        "legacy-mixed-threshold",
+        "legacy-mixed-startup",
+        "legacy-mixed-r2-native",
+        "legacy-mixed-r2-assisted",
+        "legacy-mixed-r3-native",
+        "legacy-mixed-r3-assisted"
+      ]
+    }
+  ],
+  "versions": {
+    "four-startup": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Narrow pixel-color and shape gate accepts low-score distant zombies at startup"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "No age cap",
+      "source": "50b9a77",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/startup-low-score/four-zombies-trial-1",
+          "kills": 4,
+          "steps": 400,
+          "hpc_job": 29485092,
+          "final_health": 5.48,
+          "deaths": 0,
+          "target_steps": 371,
+          "scan_steps": 29
+        },
+        {
+          "base": "/current/startup-low-score/four-zombies-trial-2",
+          "kills": 3,
+          "steps": 400,
+          "hpc_job": 29485121,
+          "final_health": 2.19,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0
+        },
+        {
+          "base": "/current/startup-low-score/four-zombies-trial-3",
+          "kills": 4,
+          "steps": 400,
+          "hpc_job": 29485161,
+          "final_health": 13.49,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0
+        }
+      ]
+    },
+    "four-threshold": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Lower-body pixel check rejects foreground sword false positives"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "b810fb8",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/regression/blue-trousers-pilot",
+          "kills": 4,
+          "steps": 400,
+          "hpc_job": 29482980,
+          "final_health": 12.86,
+          "deaths": 0,
+          "target_steps": 296,
+          "scan_steps": 85
+        },
+        {
+          "base": "/regression/blue-trousers-repeat-2",
+          "kills": 3,
+          "steps": 400,
+          "hpc_job": 29483071,
+          "final_health": 4.03,
+          "deaths": 0,
+          "target_steps": 379,
+          "scan_steps": 0
+        },
+        {
+          "base": "/regression/blue-trousers-repeat-3",
+          "kills": 0,
+          "steps": 330,
+          "hpc_job": 29483072,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 269,
+          "scan_steps": 37
+        }
+      ]
+    },
+    "legacy-two-hud": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 HUD gate",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Low-score zombie startup rule",
+        "Bottom HUD mask gate rejects hotbar item false positives"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "No age cap",
+      "source": "65686e2",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/hud-gate/two-skeletons-trial-1",
+          "kills": 2,
+          "steps": 400,
+          "hpc_job": 29485309,
+          "final_health": 18.6,
+          "deaths": 0,
+          "target_steps": 232,
+          "scan_steps": 168
+        }
+      ]
+    },
+    "legacy-two-threshold": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "828c438",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/old-threshold/two-skeletons-trial-1",
+          "kills": 2,
+          "steps": 400,
+          "hpc_job": 29485210,
+          "final_health": 20,
+          "deaths": 0,
+          "target_steps": 212,
+          "scan_steps": 188
+        }
+      ]
+    },
+    "legacy-two-startup": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Low-score zombie startup rule"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "No age cap",
+      "source": "50b9a77",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/startup-low-score/two-skeletons-trial-1",
+          "kills": 1,
+          "steps": 400,
+          "hpc_job": 29485195,
+          "final_health": 5.57,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0
+        }
+      ]
+    },
+    "legacy-mixed-cap": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 0.75 s aim cap",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Low-score zombie startup rule",
+        "Mask-based aim only while the mask is at most 0.75 seconds old"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "0.75 seconds",
+      "source": "50b9a77",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/aim-age-cap/mixed-threats-trial-1",
+          "kills": 3,
+          "steps": 400,
+          "hpc_job": 29485276,
+          "final_health": 1.01,
+          "deaths": 0,
+          "target_steps": 400,
+          "scan_steps": 0
+        },
+        {
+          "base": "/current/aim-age-cap/mixed-threats-trial-2",
+          "kills": 3,
+          "steps": 400,
+          "hpc_job": 29485277,
+          "final_health": 17.94,
+          "deaths": 0,
+          "target_steps": 261,
+          "scan_steps": 139
+        },
+        {
+          "base": "/current/aim-age-cap/mixed-threats-trial-3",
+          "kills": 3,
+          "steps": 400,
+          "hpc_job": 29485278,
+          "final_health": 10.75,
+          "deaths": 0,
+          "target_steps": 356,
+          "scan_steps": 44
+        }
+      ]
+    },
+    "legacy-mixed-threshold": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "828c438",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/old-threshold/mixed-threats-trial-1",
+          "kills": 2,
+          "steps": 376,
+          "hpc_job": 29485210,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 356,
+          "scan_steps": 20
+        }
+      ]
+    },
+    "legacy-mixed-startup": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "ROCKET-3 combat assistance: input locks, mask aim, attack cooldown, reactive attacks",
+        "Low-score zombie startup rule"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "No age cap",
+      "source": "50b9a77",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/startup-low-score/mixed-threats-trial-1",
+          "kills": 0,
+          "steps": 336,
+          "hpc_job": 29485195,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 184,
+          "scan_steps": 152
+        }
+      ]
+    },
+    "four-r2-native": {
+      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-native/four-zombies",
+          "kills": 0,
+          "steps": 600,
+          "hpc_job": 29478246,
+          "final_health": 8.0,
+          "deaths": 0,
+          "target_steps": 87,
+          "scan_steps": 513
+        }
+      ]
+    },
+    "four-r2-assisted": {
+      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-assisted/four-zombies",
+          "kills": 0,
+          "steps": 600,
+          "hpc_job": 29478239,
+          "final_health": 13.67,
+          "deaths": 0,
+          "target_steps": 45,
+          "scan_steps": 555
+        }
+      ]
+    },
+    "four-r3-native": {
+      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-native/four-zombies",
+          "kills": 0,
+          "steps": 316,
+          "hpc_job": 29478244,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 36,
+          "scan_steps": 280
+        }
+      ]
+    },
+    "four-r3-assisted": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "four-zombies",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-assisted/four-zombies",
+          "kills": 0,
+          "steps": 313,
+          "hpc_job": 29478238,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 67,
+          "scan_steps": 246
+        }
+      ]
+    },
+    "legacy-two-r2-native": {
+      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-native/two-skeletons",
+          "kills": 2,
+          "steps": 600,
+          "hpc_job": 29478246,
+          "final_health": 20.0,
+          "deaths": 0,
+          "target_steps": 435,
+          "scan_steps": 165
+        }
+      ]
+    },
+    "legacy-two-r2-assisted": {
+      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-assisted/two-skeletons",
+          "kills": 2,
+          "steps": 600,
+          "hpc_job": 29478239,
+          "final_health": 20.0,
+          "deaths": 0,
+          "target_steps": 547,
+          "scan_steps": 53
+        }
+      ]
+    },
+    "legacy-two-r3-native": {
+      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-native/two-skeletons",
+          "kills": 2,
+          "steps": 600,
+          "hpc_job": 29478244,
+          "final_health": 8.17,
+          "deaths": 0,
+          "target_steps": 324,
+          "scan_steps": 276
+        }
+      ]
+    },
+    "legacy-two-r3-assisted": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-two",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-assisted/two-skeletons",
+          "kills": 2,
+          "steps": 600,
+          "hpc_job": 29478238,
+          "final_health": 14.57,
+          "deaths": 0,
+          "target_steps": 159,
+          "scan_steps": 441
+        }
+      ]
+    },
+    "legacy-mixed-r2-native": {
+      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-native/mixed-threats",
+          "kills": 0,
+          "steps": 600,
+          "hpc_job": 29478246,
+          "final_health": 15.5,
+          "deaths": 0,
+          "target_steps": 238,
+          "scan_steps": 362
+        }
+      ]
+    },
+    "legacy-mixed-r2-assisted": {
+      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r2-assisted/mixed-threats",
+          "kills": 2,
+          "steps": 600,
+          "hpc_job": 29478239,
+          "final_health": 8.17,
+          "deaths": 0,
+          "target_steps": 159,
+          "scan_steps": 441
+        }
+      ]
+    },
+    "legacy-mixed-r3-native": {
+      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "No combat action edits; policy output is passed through after goal selection"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "9f193cb",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-native/mixed-threats",
+          "kills": 0,
+          "steps": 262,
+          "hpc_job": 29478244,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 74,
+          "scan_steps": 188
+        }
+      ]
+    },
+    "legacy-mixed-r3-assisted": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "scenario": "legacy-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "SAM 3 detects mobs from rendered frames",
+        "Nearest visible target supervisor",
+        "Combat input locks, mask-based aiming, attack timing, and close-range reactive attacks"
+      ],
+      "detector_threshold": "0.25",
+      "visual_aim_age": "No age cap",
+      "source": "fc3d424",
+      "status": "Recorded",
+      "runs": [
+        {
+          "base": "/current/r3-assisted/mixed-threats",
+          "kills": 1,
+          "steps": 311,
+          "hpc_job": 29478238,
+          "final_health": null,
+          "deaths": 1,
+          "target_steps": 81,
+          "scan_steps": 230
+        }
+      ]
+    },
+    "bow-two-r2-native": {
+      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-two",
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Native combat actions; no action edits after visual goal selection"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "Not applicable",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-two-r2-assisted": {
+      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-two",
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Input locks, mask aiming, attack timing, reactive attacks",
+        "Low-score zombie startup rule",
+        "Hotbar false-positive gate",
+        "0.75-second visual-aim age cap"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "0.75 seconds",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-two-r3-native": {
+      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-two",
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Native combat actions; no action edits after visual goal selection"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "Not applicable",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-two-r3-assisted": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-two",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Input locks, mask aiming, attack timing, reactive attacks",
+        "Low-score zombie startup rule",
+        "Hotbar false-positive gate",
+        "0.75-second visual-aim age cap"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "0.75 seconds",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-mixed-r2-native": {
+      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-mixed",
+      "policy": "ROCKET-2",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Native combat actions; no action edits after visual goal selection"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "Not applicable",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-mixed-r2-assisted": {
+      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-mixed",
+      "policy": "ROCKET-2",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Input locks, mask aiming, attack timing, reactive attacks",
+        "Low-score zombie startup rule",
+        "Hotbar false-positive gate",
+        "0.75-second visual-aim age cap"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "0.75 seconds",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-mixed-r3-native": {
+      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Native actions with shared visual supervisor",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Native combat actions; no action edits after visual goal selection"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "Not applicable",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    },
+    "bow-mixed-r3-assisted": {
+      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 bows",
+      "scenario": "bow-mixed",
+      "policy": "ROCKET-3",
+      "condition": "Assisted",
+      "segmentation": "SAM 3 text-prompt image masks; SAM 2 not used",
+      "targeting": "Nearest visible target using screen-mask proximity",
+      "changes": [
+        "Bow-equipped skeleton scenario",
+        "SAM 3 masks from screen pixels",
+        "Nearest visible target supervisor",
+        "Input locks, mask aiming, attack timing, reactive attacks",
+        "Low-score zombie startup rule",
+        "Hotbar false-positive gate",
+        "0.75-second visual-aim age cap"
+      ],
+      "detector_threshold": "0.10",
+      "visual_aim_age": "0.75 seconds",
+      "source": "8a2b8de",
+      "status": "HPC runs queued",
+      "runs": []
+    }
+  },
+  "shared_inputs": "Rendered screen pixels and previous executed actions. SAM masks are derived from screen pixels. Simulator telemetry is used only for offline scoring.",
+  "sam2_note": "SAM 2 was tested separately as a screen-seeded tracker; it is not used in any combat recording listed here."
+}

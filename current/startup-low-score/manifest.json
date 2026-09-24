@@ -24,7 +24,13 @@
       "target_steps": 371,
       "scan_steps": 29,
       "screen_recording": "four-zombies-trial-1.mp4",
-      "segmentation_recording": "four-zombies-trial-1-masks.mp4"
+      "segmentation_recording": "four-zombies-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "four-zombies",
@@ -37,7 +43,13 @@
       "target_steps": 400,
       "scan_steps": 0,
       "screen_recording": "four-zombies-trial-2.mp4",
-      "segmentation_recording": "four-zombies-trial-2-masks.mp4"
+      "segmentation_recording": "four-zombies-trial-2-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "four-zombies",
@@ -50,7 +62,13 @@
       "target_steps": 400,
       "scan_steps": 0,
       "screen_recording": "four-zombies-trial-3.mp4",
-      "segmentation_recording": "four-zombies-trial-3-masks.mp4"
+      "segmentation_recording": "four-zombies-trial-3-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "two-skeletons",
@@ -63,7 +81,11 @@
       "target_steps": 400,
       "scan_steps": 0,
       "screen_recording": "two-skeletons-trial-1.mp4",
-      "segmentation_recording": "two-skeletons-trial-1-masks.mp4"
+      "segmentation_recording": "two-skeletons-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none"
+      ]
     },
     {
       "scenario": "mixed-threats",
@@ -76,7 +98,13 @@
       "target_steps": 184,
       "scan_steps": 152,
       "screen_recording": "mixed-threats-trial-1.mp4",
-      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4",
+      "mob_equipment": [
+        "none",
+        "none",
+        "none"
+      ]
     }
-  ]
+  ],
+  "skeleton_equipment": "none (legacy unarmed skeleton scenarios)"
 }

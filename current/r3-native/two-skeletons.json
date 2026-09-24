@@ -31,5 +31,9 @@
   },
   "target_steps": 324,
   "scan_steps": 276,
-  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only"
+  "input_protocol": "rendered frames + previous actions + SAM3 text detections; setup commands for arena only",
+  "mob_equipment": [
+    "none",
+    "none"
+  ]
 }

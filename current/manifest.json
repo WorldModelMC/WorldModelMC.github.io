@@ -4,14 +4,35 @@
   "world_and_policy_seed": 2002956061,
   "maximum_steps": 600,
   "stop_on_first_death": true,
-  "scenarios": ["four-zombies", "two-skeletons", "mixed-threats"],
+  "scenarios": [
+    "four-zombies",
+    "two-skeletons",
+    "mixed-threats"
+  ],
   "shared_inputs": "Rendered screen pixels, previous actions, and SAM 3 text detections from those pixels. Arena commands and outcome telemetry are excluded from control.",
   "native_condition": "Shared visual detection and nearest-target supervisor; no combat action edits.",
   "assisted_condition": "Shared visual detection and supervisor plus combat input locks, mask-based aiming, attack timing, and close-range reactive attacks.",
   "arms": {
-    "r2-native": {"job_id": 29478246, "source_commit": "9f193cb", "run_directory": "threat-suite-v11-native-rocket2"},
-    "r2-assisted": {"job_id": 29478239, "source_commit": "fc3d424", "run_directory": "threat-suite-v10-rocket2"},
-    "r3-native": {"job_id": 29478244, "source_commit": "9f193cb", "run_directory": "threat-suite-v11-native-rocket3"},
-    "r3-assisted": {"job_id": 29478238, "source_commit": "fc3d424", "run_directory": "threat-suite-v10-rocket3"}
-  }
+    "r2-native": {
+      "job_id": 29478246,
+      "source_commit": "9f193cb",
+      "run_directory": "threat-suite-v11-native-rocket2"
+    },
+    "r2-assisted": {
+      "job_id": 29478239,
+      "source_commit": "fc3d424",
+      "run_directory": "threat-suite-v10-rocket2"
+    },
+    "r3-native": {
+      "job_id": 29478244,
+      "source_commit": "9f193cb",
+      "run_directory": "threat-suite-v11-native-rocket3"
+    },
+    "r3-assisted": {
+      "job_id": 29478238,
+      "source_commit": "fc3d424",
+      "run_directory": "threat-suite-v10-rocket3"
+    }
+  },
+  "skeleton_equipment": "none (legacy unarmed skeleton scenarios)"
 }
