@@ -1,0 +1,82 @@
+{
+  "source": "50b9a77",
+  "seed": 2002956061,
+  "setting": "SAM 3 startup low-score rule, nearest visible target",
+  "model_inputs": [
+    "screen pixels",
+    "prior actions",
+    "screen-derived segmentation"
+  ],
+  "evaluator_only": [
+    "simulator health",
+    "damage",
+    "kill counters"
+  ],
+  "runs": [
+    {
+      "scenario": "four-zombies",
+      "trial": 1,
+      "hpc_job": 29485092,
+      "steps": 400,
+      "kills": 4,
+      "death": false,
+      "final_health": 5.48,
+      "target_steps": 371,
+      "scan_steps": 29,
+      "screen_recording": "four-zombies-trial-1.mp4",
+      "segmentation_recording": "four-zombies-trial-1-masks.mp4"
+    },
+    {
+      "scenario": "four-zombies",
+      "trial": 2,
+      "hpc_job": 29485121,
+      "steps": 400,
+      "kills": 3,
+      "death": false,
+      "final_health": 2.19,
+      "target_steps": 400,
+      "scan_steps": 0,
+      "screen_recording": "four-zombies-trial-2.mp4",
+      "segmentation_recording": "four-zombies-trial-2-masks.mp4"
+    },
+    {
+      "scenario": "four-zombies",
+      "trial": 3,
+      "hpc_job": 29485161,
+      "steps": 400,
+      "kills": 4,
+      "death": false,
+      "final_health": 13.49,
+      "target_steps": 400,
+      "scan_steps": 0,
+      "screen_recording": "four-zombies-trial-3.mp4",
+      "segmentation_recording": "four-zombies-trial-3-masks.mp4"
+    },
+    {
+      "scenario": "two-skeletons",
+      "trial": 1,
+      "hpc_job": 29485195,
+      "steps": 400,
+      "kills": 1,
+      "death": false,
+      "final_health": 5.57,
+      "target_steps": 400,
+      "scan_steps": 0,
+      "screen_recording": "two-skeletons-trial-1.mp4",
+      "segmentation_recording": "two-skeletons-trial-1-masks.mp4"
+    },
+    {
+      "scenario": "mixed-threats",
+      "trial": 1,
+      "hpc_job": 29485195,
+      "steps": 336,
+      "kills": 0,
+      "death": true,
+      "final_health": null,
+      "target_steps": 184,
+      "scan_steps": 152,
+      "screen_recording": "mixed-threats-trial-1.mp4",
+      "segmentation_recording": "mixed-threats-trial-1-masks.mp4"
+    }
+  ]
+}
