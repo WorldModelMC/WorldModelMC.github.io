@@ -68,7 +68,7 @@
   ],
   "versions": {
     "four-startup": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "label": "ROCKET-3 assisted · SAM 3 · startup mask rule",
       "scenario": "four-zombies",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -121,7 +121,7 @@
       ]
     },
     "four-threshold": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "label": "ROCKET-3 assisted · SAM 3 · threshold 0.25",
       "scenario": "four-zombies",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -174,7 +174,7 @@
       ]
     },
     "legacy-two-hud": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 HUD gate",
+      "label": "ROCKET-3 assisted · SAM 3 · HUD gate",
       "scenario": "legacy-two",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -206,7 +206,7 @@
       ]
     },
     "legacy-two-threshold": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "label": "ROCKET-3 assisted · SAM 3 · threshold 0.25",
       "scenario": "legacy-two",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -236,7 +236,7 @@
       ]
     },
     "legacy-two-startup": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "label": "ROCKET-3 assisted · SAM 3 · startup mask rule",
       "scenario": "legacy-two",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -267,7 +267,7 @@
       ]
     },
     "legacy-mixed-cap": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 0.75 s aim cap",
+      "label": "ROCKET-3 assisted · SAM 3 · 0.75 s aim cap",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -321,7 +321,7 @@
       ]
     },
     "legacy-mixed-threshold": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 threshold 0.25",
+      "label": "ROCKET-3 assisted · SAM 3 · threshold 0.25",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -351,7 +351,7 @@
       ]
     },
     "legacy-mixed-startup": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 startup mask rule",
+      "label": "ROCKET-3 assisted · SAM 3 · startup mask rule",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -382,7 +382,7 @@
       ]
     },
     "four-r2-native": {
-      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 native actions · SAM 3 · legacy v1",
       "scenario": "four-zombies",
       "policy": "ROCKET-2",
       "condition": "Native actions with shared visual supervisor",
@@ -412,7 +412,7 @@
       ]
     },
     "four-r2-assisted": {
-      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 assisted · SAM 3 · legacy v1",
       "scenario": "four-zombies",
       "policy": "ROCKET-2",
       "condition": "Assisted",
@@ -442,7 +442,7 @@
       ]
     },
     "four-r3-native": {
-      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 native actions · SAM 3 · legacy v1",
       "scenario": "four-zombies",
       "policy": "ROCKET-3",
       "condition": "Native actions with shared visual supervisor",
@@ -472,7 +472,7 @@
       ]
     },
     "four-r3-assisted": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 assisted · SAM 3 · legacy v1",
       "scenario": "four-zombies",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -502,7 +502,7 @@
       ]
     },
     "legacy-two-r2-native": {
-      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 native actions · SAM 3 · legacy v1",
       "scenario": "legacy-two",
       "policy": "ROCKET-2",
       "condition": "Native actions with shared visual supervisor",
@@ -532,7 +532,7 @@
       ]
     },
     "legacy-two-r2-assisted": {
-      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 assisted · SAM 3 · legacy v1",
       "scenario": "legacy-two",
       "policy": "ROCKET-2",
       "condition": "Assisted",
@@ -562,7 +562,7 @@
       ]
     },
     "legacy-two-r3-native": {
-      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 native actions · SAM 3 · legacy v1",
       "scenario": "legacy-two",
       "policy": "ROCKET-3",
       "condition": "Native actions with shared visual supervisor",
@@ -592,7 +592,7 @@
       ]
     },
     "legacy-two-r3-assisted": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 assisted · SAM 3 · legacy v1",
       "scenario": "legacy-two",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -622,7 +622,7 @@
       ]
     },
     "legacy-mixed-r2-native": {
-      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 native actions · SAM 3 · legacy v1",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-2",
       "condition": "Native actions with shared visual supervisor",
@@ -652,7 +652,7 @@
       ]
     },
     "legacy-mixed-r2-assisted": {
-      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-2 assisted · SAM 3 · legacy v1",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-2",
       "condition": "Assisted",
@@ -682,7 +682,7 @@
       ]
     },
     "legacy-mixed-r3-native": {
-      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 native actions · SAM 3 · legacy v1",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-3",
       "condition": "Native actions with shared visual supervisor",
@@ -712,7 +712,7 @@
       ]
     },
     "legacy-mixed-r3-assisted": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 legacy v1",
+      "label": "ROCKET-3 assisted · SAM 3 · legacy v1",
       "scenario": "legacy-mixed",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -742,7 +742,7 @@
       ]
     },
     "bow-two-r2-native": {
-      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-2 native actions · SAM 3 · bows",
       "scenario": "bow-two",
       "policy": "ROCKET-2",
       "condition": "Native actions with shared visual supervisor",
@@ -773,7 +773,7 @@
       ]
     },
     "bow-two-r2-assisted": {
-      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-2 assisted · SAM 3 · bows",
       "scenario": "bow-two",
       "policy": "ROCKET-2",
       "condition": "Assisted",
@@ -807,7 +807,7 @@
       ]
     },
     "bow-two-r3-native": {
-      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-3 native actions · SAM 3 · bows",
       "scenario": "bow-two",
       "policy": "ROCKET-3",
       "condition": "Native actions with shared visual supervisor",
@@ -838,7 +838,7 @@
       ]
     },
     "bow-two-r3-assisted": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-3 assisted · SAM 3 · bows",
       "scenario": "bow-two",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -894,7 +894,7 @@
       ]
     },
     "bow-mixed-r2-native": {
-      "label": "ROCKET-2 native actions \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-2 native actions · SAM 3 · bows",
       "scenario": "bow-mixed",
       "policy": "ROCKET-2",
       "condition": "Native actions with shared visual supervisor",
@@ -929,7 +929,7 @@
       ]
     },
     "bow-mixed-r2-assisted": {
-      "label": "ROCKET-2 assisted \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-2 assisted · SAM 3 · bows",
       "scenario": "bow-mixed",
       "policy": "ROCKET-2",
       "condition": "Assisted",
@@ -967,7 +967,7 @@
       ]
     },
     "bow-mixed-r3-native": {
-      "label": "ROCKET-3 native actions \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-3 native actions · SAM 3 · bows",
       "scenario": "bow-mixed",
       "policy": "ROCKET-3",
       "condition": "Native actions with shared visual supervisor",
@@ -1002,7 +1002,7 @@
       ]
     },
     "bow-mixed-r3-assisted": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u00b7 bows",
+      "label": "ROCKET-3 assisted · SAM 3 · bows",
       "scenario": "bow-mixed",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -1070,7 +1070,7 @@
       ]
     },
     "four-hybrid-sam3-sam2": {
-      "label": "ROCKET-3 assisted \u00b7 SAM 3 \u2192 SAM 2 tracking \u00b7 pilot",
+      "label": "ROCKET-3 assisted · SAM 3 → SAM 2 tracking · pilot",
       "scenario": "four-zombies",
       "policy": "ROCKET-3",
       "condition": "Assisted",
@@ -1086,10 +1086,22 @@
       "detector_threshold": "SAM 3 initial 0.10; SAM 2 tracking masks have no calibrated confidence",
       "visual_aim_age": "No age cap",
       "source": "eac9b45",
-      "status": "HPC pilot queued (job 29486914)",
-      "runs": []
+      "status": "Recorded: 1 pilot trial",
+      "runs": [
+        {
+          "base": "/current/hybrid-four-zombies/trial-1",
+          "kills": 1,
+          "steps": 332,
+          "hpc_job": 29486914,
+          "final_health": 0.0,
+          "deaths": 1,
+          "target_steps": 319,
+          "scan_steps": 13,
+          "wall_seconds": 40.1452
+        }
+      ]
     }
   },
   "shared_inputs": "Rendered screen pixels and previous executed actions. SAM masks are derived from screen pixels. Simulator telemetry is used only for offline scoring.",
-  "sam2_note": "SAM 2 was tested separately as a screen-seeded tracker; it is not used in any combat recording listed here."
+  "sam2_note": "SAM 2 is used in the SAM 3 → SAM 2 hybrid pilot: SAM 3 seeds initial screen-derived masks and SAM 2 tracks them during combat. Other recordings use SAM 3 alone."
 }

@@ -1,0 +1,59 @@
+{
+  "scenario": "four-zombies",
+  "mobs": [
+    "zombie",
+    "zombie",
+    "zombie",
+    "zombie"
+  ],
+  "mob_equipment": [
+    "none",
+    "none",
+    "none",
+    "none"
+  ],
+  "policy": "rocket3",
+  "condition": "assisted",
+  "target_strategy": "nearest",
+  "goal_update": "class",
+  "detector_labels": [
+    "minecraft_zombie"
+  ],
+  "detector_threshold": 0.1,
+  "perception_backend": "sam3-sam2",
+  "confidence_threshold": 0.1,
+  "aim_max_age_seconds": null,
+  "scan_delay_seconds": 3.0,
+  "lost_grace_seconds": 4.0,
+  "scan_level_view": true,
+  "steps": 332,
+  "status": "player_died",
+  "kills": {
+    "zombie": 1
+  },
+  "deaths": 1,
+  "cleared_alive": false,
+  "final_metrics": {
+    "health": 20.0,
+    "food_level": 20,
+    "damage_dealt": {},
+    "kill_entity": {
+      "zombie": 1
+    },
+    "custom": {
+      "jump": 11,
+      "time_since_rest": 4,
+      "damage_dealt": 682,
+      "play_one_minute": 452,
+      "deaths": 1,
+      "damage_taken": 350,
+      "time_since_death": 0,
+      "walk_one_cm": 1185,
+      "mob_kills": 1,
+      "fly_one_cm": 589
+    }
+  },
+  "target_steps": 319,
+  "scan_steps": 13,
+  "input_protocol": "rendered frames + previous actions + SAM3 text discovery + SAM2 pixel-mask tracking; setup commands for arena only"
+}

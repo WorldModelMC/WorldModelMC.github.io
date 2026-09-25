@@ -1,0 +1,1 @@
+{"backend": "sam3-sam2", "status": "stopped", "score_type": "SAM 3 initial discovery; later SAM 2 mask presence, not confidence", "seed_frame": -1, "seed_count": 4, "tracking_started": true, "frame": 330, "targets": 0, "captured_at": 1790284936.0912962, "age_seconds": 0.22354459762573242, "inference_seconds": 0.17820088600274175}
