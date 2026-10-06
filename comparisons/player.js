@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-play]').forEach(b=>b.onclick=()=>{const vs=b.closest('section').querySelectorAll('video');vs.forEach(v=>{v.currentTime=0;v.muted=true;v.play().catch(()=>{});});});document.querySelectorAll('[data-pause]').forEach(b=>b.onclick=()=>b.closest('section').querySelectorAll('video').forEach(v=>v.pause()));

@@ -1,0 +1,327 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.05
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.15
+        },
+        {
+          "camera": [
+            180,
+            0
+          ],
+          "keys": [
+            "hotbar.1"
+          ],
+          "seconds": 0.15
+        },
+        {
+          "keys": [
+            "jump"
+          ],
+          "buttons": [
+            "use"
+          ],
+          "seconds": 2.5
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            180,
+            0
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "jump"
+          ],
+          "buttons": [
+            "use"
+          ],
+          "seconds": 2.7
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -80,
+            0
+          ],
+          "keys": [
+            "forward",
+            "hotbar.7"
+          ],
+          "seconds": 0.65
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            180
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward",
+            "jump"
+          ],
+          "seconds": 1
+        },
+        {
+          "camera": [
+            0,
+            90
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward",
+            "jump"
+          ],
+          "seconds": 0.7
+        },
+        {
+          "camera": [
+            0,
+            90
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "cursor": [
+            784,
+            451
+          ],
+          "keys": [
+            "hotbar.9"
+          ],
+          "seconds": 0.2
+        },
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "hotbar.9"
+          ],
+          "buttons": [
+            "use"
+          ],
+          "seconds": 2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "cursor": [
+            784,
+            451
+          ],
+          "seconds": 0.2
+        },
+        {
+          "keys": [
+            "hotbar.9"
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.2
+        },
+        {
+          "buttons": [
+            "use"
+          ],
+          "seconds": 2
+        },
+        {
+          "keys": [
+            "hotbar.7"
+          ],
+          "camera": [
+            0,
+            90
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed",
+    "error": null
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            90
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "failed",
+    "error": null
+  }
+]

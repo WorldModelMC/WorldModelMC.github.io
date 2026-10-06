@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": [
+    "all observed scored polls20TPS Easy unpaused unfrozen",
+    "monotonic scorer timestamps",
+    "raw video decoded frame count matches timing log",
+    "raw video1280x720",
+    "video/game/wall durations within1.5seconds",
+    "clean arms have no tool errors and died",
+    "excluded service attempt contains two failed look calls and no actions"
+  ],
+  "limits": [
+    "one converted checkpoint and one clean trial per arm",
+    "20-tick maximum preparation initialization tolerance; baseline restore+3, ROCKET restore+2",
+    "geometric success criterion excludes some lower surrounding terrain",
+    "normal HUD inspected visually; exact binary/world provenance archived",
+    "nominal20FPS recording; per-frame wall timestamps retained"
+  ]
+}

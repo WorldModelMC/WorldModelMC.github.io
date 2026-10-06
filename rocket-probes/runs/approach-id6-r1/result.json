@@ -1,0 +1,134 @@
+{
+  "id": "approach-id6-r1",
+  "scene": "approach",
+  "event_id": 6,
+  "trial": 1,
+  "seconds": 10.000370509922504,
+  "steps": 200,
+  "mean_hz": 19.999259007609496,
+  "policy_p50_ms": 16.996149090118706,
+  "before": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 1667,
+    "game_time": 1667,
+    "day_time": 1000,
+    "world_dir": "/work3/s216136/rocket3-research-20261006/game/saves/rocket-noncombat (8)",
+    "level_name": "rocket-noncombat",
+    "difficulty": "easy",
+    "spawn": [
+      -192,
+      63,
+      -176
+    ],
+    "player": {
+      "x": -192.5,
+      "y": 100.0,
+      "z": -184.5,
+      "yaw": 0.0,
+      "pitch": 5.0,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:diamond_axe",
+          "item": "diamond_axe",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 1740,
+      "player_tick": 1616,
+      "x": -192.5,
+      "y": 100.0,
+      "z": -184.5,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 158
+    }
+  },
+  "after": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 1867,
+    "game_time": 1867,
+    "day_time": 1000,
+    "world_dir": "/work3/s216136/rocket3-research-20261006/game/saves/rocket-noncombat (8)",
+    "level_name": "rocket-noncombat",
+    "difficulty": "easy",
+    "spawn": [
+      -192,
+      63,
+      -176
+    ],
+    "player": {
+      "x": -191.69999998807907,
+      "y": 100.0,
+      "z": -176.0625185743792,
+      "yaw": -203.85008,
+      "pitch": 22.099997,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:diamond_axe",
+          "item": "diamond_axe",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 1939,
+      "player_tick": 1815,
+      "x": -191.69999998807907,
+      "y": 100.0,
+      "z": -176.0625185743792,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 142
+    }
+  },
+  "observation": "player RGB plus hand-selected rectangle goal; previous executed action",
+  "status": "unscored runtime diagnostic"
+}
