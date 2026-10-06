@@ -1,0 +1,143 @@
+{
+  "valid": true,
+  "outcome": "success",
+  "why": "all criteria met at 44.9 s",
+  "game_seconds": 44.9,
+  "criteria_met_at": {
+    "gained_item": 44.9
+  },
+  "metrics": {
+    "health_lost": 0.0,
+    "died": false,
+    "game_seconds": 44.9
+  },
+  "wall_seconds": 45.31242377590388,
+  "before": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 8,
+    "game_time": 276,
+    "day_time": 1000,
+    "world_dir": "/work3/s216136/rocket3-checkpoint-20261006/game/saves/baseline-r0",
+    "level_name": "rocket-checkpoint-tree",
+    "difficulty": "easy",
+    "spawn": [
+      0,
+      64,
+      0
+    ],
+    "player": {
+      "x": 8.5,
+      "y": 100.0,
+      "z": -0.5,
+      "yaw": 0.0,
+      "pitch": 5.0,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:diamond_axe",
+          "item": "diamond_axe",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 168,
+      "player_tick": 4,
+      "x": 8.5,
+      "y": 100.0,
+      "z": -0.5,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 18
+    }
+  },
+  "after": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 917,
+    "game_time": 1185,
+    "day_time": 1000,
+    "world_dir": "/work3/s216136/rocket3-checkpoint-20261006/game/saves/baseline-r0",
+    "level_name": "rocket-checkpoint-tree",
+    "difficulty": "easy",
+    "spawn": [
+      0,
+      64,
+      0
+    ],
+    "player": {
+      "x": 8.50583468132957,
+      "y": 100.0,
+      "z": 4.453620016367093,
+      "yaw": -0.15000002,
+      "pitch": -71.950005,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:diamond_axe",
+          "item": "diamond_axe",
+          "count": 1
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:oak_log",
+          "item": "oak_log",
+          "count": 3
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 1078,
+      "player_tick": 914,
+      "x": 8.50583468132957,
+      "y": 100.0,
+      "z": 4.453620016367093,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 6
+    }
+  }
+}

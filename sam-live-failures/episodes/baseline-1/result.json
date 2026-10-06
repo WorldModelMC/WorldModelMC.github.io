@@ -1,0 +1,479 @@
+{
+  "valid": true,
+  "outcome": "success",
+  "reason": "survived_horizon",
+  "health_lost": 9.5,
+  "died": false,
+  "game_seconds": 120.45,
+  "wall_seconds": 120.73329374799505,
+  "before": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 4,
+    "game_time": 22558,
+    "day_time": 22558,
+    "world_dir": "/work3/s216136/sam-live-failures-20261006/game/saves/baseline-1",
+    "level_name": "Agent 18137 (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      -284,
+      63,
+      -58
+    ],
+    "player": {
+      "x": -283.43759098512544,
+      "y": 63.0,
+      "z": -57.30000001192093,
+      "yaw": 161.69989,
+      "pitch": -90.0,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 2.6000004,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 3,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 5,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 64
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:bucket",
+          "item": "bucket",
+          "count": 1
+        },
+        {
+          "slot": 2,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 3,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 8
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 64
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:stone_shovel",
+          "item": "stone_shovel",
+          "count": 1
+        },
+        {
+          "slot": 6,
+          "id": "minecraft:stone_axe",
+          "item": "stone_axe",
+          "count": 1
+        },
+        {
+          "slot": 7,
+          "id": "minecraft:torch",
+          "item": "torch",
+          "count": 6
+        },
+        {
+          "slot": 8,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 11
+        },
+        {
+          "slot": 9,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 64
+        },
+        {
+          "slot": 10,
+          "id": "minecraft:rotten_flesh",
+          "item": "rotten_flesh",
+          "count": 2
+        },
+        {
+          "slot": 11,
+          "id": "minecraft:white_wool",
+          "item": "white_wool",
+          "count": 1
+        },
+        {
+          "slot": 12,
+          "id": "minecraft:andesite",
+          "item": "andesite",
+          "count": 14
+        },
+        {
+          "slot": 14,
+          "id": "minecraft:porkchop",
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "slot": 15,
+          "id": "minecraft:leather",
+          "item": "leather",
+          "count": 1
+        },
+        {
+          "slot": 16,
+          "id": "minecraft:flint",
+          "item": "flint",
+          "count": 3
+        },
+        {
+          "slot": 17,
+          "id": "minecraft:gravel",
+          "item": "gravel",
+          "count": 6
+        },
+        {
+          "slot": 18,
+          "id": "minecraft:wooden_pickaxe",
+          "item": "wooden_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 19,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 20,
+          "id": "minecraft:diorite",
+          "item": "diorite",
+          "count": 11
+        },
+        {
+          "slot": 21,
+          "id": "minecraft:granite",
+          "item": "granite",
+          "count": 2
+        },
+        {
+          "slot": 22,
+          "id": "minecraft:stone",
+          "item": "stone",
+          "count": 1
+        },
+        {
+          "slot": 23,
+          "id": "minecraft:iron_ore",
+          "item": "iron_ore",
+          "count": 6
+        },
+        {
+          "slot": 24,
+          "id": "minecraft:furnace",
+          "item": "furnace",
+          "count": 1
+        },
+        {
+          "slot": 25,
+          "id": "minecraft:coal",
+          "item": "coal",
+          "count": 1
+        },
+        {
+          "slot": 26,
+          "id": "minecraft:oak_planks",
+          "item": "oak_planks",
+          "count": 1
+        },
+        {
+          "slot": 27,
+          "id": "minecraft:crafting_table",
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "slot": 33,
+          "id": "minecraft:iron_ingot",
+          "item": "iron_ingot",
+          "count": 2
+        },
+        {
+          "slot": 34,
+          "id": "minecraft:stick",
+          "item": "stick",
+          "count": 1
+        },
+        {
+          "slot": 35,
+          "id": "minecraft:cooked_beef",
+          "item": "cooked_beef",
+          "count": 2
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 6508,
+      "player_tick": 10,
+      "x": -283.43759098512544,
+      "y": 63.0,
+      "z": -57.30000001192093,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 15
+    }
+  },
+  "after": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 2424,
+    "game_time": 24978,
+    "day_time": 24978,
+    "world_dir": "/work3/s216136/sam-live-failures-20261006/game/saves/baseline-1",
+    "level_name": "Agent 18137 (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      -284,
+      63,
+      -58
+    ],
+    "player": {
+      "x": -282.572826396965,
+      "y": 66.0,
+      "z": -63.822196725750885,
+      "yaw": 161.54993,
+      "pitch": 10.049993,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 3.8000002,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 3,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 6,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 59
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:bucket",
+          "item": "bucket",
+          "count": 1
+        },
+        {
+          "slot": 2,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 3,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 9
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 64
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:stone_shovel",
+          "item": "stone_shovel",
+          "count": 1
+        },
+        {
+          "slot": 6,
+          "id": "minecraft:stone_axe",
+          "item": "stone_axe",
+          "count": 1
+        },
+        {
+          "slot": 7,
+          "id": "minecraft:torch",
+          "item": "torch",
+          "count": 6
+        },
+        {
+          "slot": 8,
+          "id": "minecraft:cooked_beef",
+          "item": "cooked_beef",
+          "count": 1
+        },
+        {
+          "slot": 9,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 64
+        },
+        {
+          "slot": 10,
+          "id": "minecraft:rotten_flesh",
+          "item": "rotten_flesh",
+          "count": 2
+        },
+        {
+          "slot": 11,
+          "id": "minecraft:white_wool",
+          "item": "white_wool",
+          "count": 1
+        },
+        {
+          "slot": 12,
+          "id": "minecraft:andesite",
+          "item": "andesite",
+          "count": 14
+        },
+        {
+          "slot": 13,
+          "id": "minecraft:cobblestone",
+          "item": "cobblestone",
+          "count": 11
+        },
+        {
+          "slot": 14,
+          "id": "minecraft:porkchop",
+          "item": "porkchop",
+          "count": 1
+        },
+        {
+          "slot": 15,
+          "id": "minecraft:leather",
+          "item": "leather",
+          "count": 1
+        },
+        {
+          "slot": 16,
+          "id": "minecraft:flint",
+          "item": "flint",
+          "count": 3
+        },
+        {
+          "slot": 17,
+          "id": "minecraft:gravel",
+          "item": "gravel",
+          "count": 6
+        },
+        {
+          "slot": 18,
+          "id": "minecraft:wooden_pickaxe",
+          "item": "wooden_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 19,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 20,
+          "id": "minecraft:diorite",
+          "item": "diorite",
+          "count": 11
+        },
+        {
+          "slot": 21,
+          "id": "minecraft:granite",
+          "item": "granite",
+          "count": 2
+        },
+        {
+          "slot": 22,
+          "id": "minecraft:stone",
+          "item": "stone",
+          "count": 1
+        },
+        {
+          "slot": 23,
+          "id": "minecraft:iron_ore",
+          "item": "iron_ore",
+          "count": 6
+        },
+        {
+          "slot": 24,
+          "id": "minecraft:furnace",
+          "item": "furnace",
+          "count": 1
+        },
+        {
+          "slot": 25,
+          "id": "minecraft:coal",
+          "item": "coal",
+          "count": 1
+        },
+        {
+          "slot": 26,
+          "id": "minecraft:oak_planks",
+          "item": "oak_planks",
+          "count": 1
+        },
+        {
+          "slot": 27,
+          "id": "minecraft:crafting_table",
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "slot": 33,
+          "id": "minecraft:iron_ingot",
+          "item": "iron_ingot",
+          "count": 2
+        },
+        {
+          "slot": 34,
+          "id": "minecraft:stick",
+          "item": "stick",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 8921,
+      "player_tick": 2423,
+      "x": -282.572826396965,
+      "y": 66.0,
+      "z": -63.822196725750885,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 151
+    }
+  }
+}

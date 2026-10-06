@@ -1,0 +1,74 @@
+{
+  "episodes": [
+    {
+      "episode": "shaft-baseline-r1",
+      "included": false,
+      "exclusion": "pixel service unavailable; actor made no inputs",
+      "outcome": "timeout",
+      "wall_seconds": 120.80779211688787,
+      "game_seconds": 121.35,
+      "health_lost": 0,
+      "first_damage_s": null,
+      "died": false,
+      "max_y": 63.0,
+      "calls": 2,
+      "rocket_calls": 0,
+      "call_errors": 2,
+      "restore_clock_drift": {
+        "game_time": 2,
+        "day_time": 2
+      },
+      "video_frames": 2409
+    },
+    {
+      "episode": "shaft-baseline-r2",
+      "included": true,
+      "exclusion": null,
+      "outcome": "fail",
+      "wall_seconds": 59.9688718218822,
+      "game_seconds": 59.95,
+      "health_lost": 22.400002600000004,
+      "first_damage_s": 47.275619111955166,
+      "died": true,
+      "max_y": 68.24918707874468,
+      "calls": 11,
+      "rocket_calls": 0,
+      "call_errors": 0,
+      "restore_clock_drift": {
+        "game_time": 3,
+        "day_time": 3
+      },
+      "video_frames": 1195
+    },
+    {
+      "episode": "shaft-rocket-r0",
+      "included": true,
+      "exclusion": null,
+      "outcome": "fail",
+      "wall_seconds": 54.495984085137025,
+      "game_seconds": 54.4,
+      "health_lost": 20.7666689,
+      "first_damage_s": 46.22665894194506,
+      "died": true,
+      "max_y": 70.29010341661343,
+      "calls": 6,
+      "rocket_calls": 1,
+      "call_errors": 0,
+      "restore_clock_drift": {
+        "game_time": 2,
+        "day_time": 2
+      },
+      "video_frames": 1084
+    }
+  ],
+  "option": {
+    "predictions": 10,
+    "issued": 9,
+    "attack": 0,
+    "forward": 0,
+    "use": 0,
+    "stale_dropped": 1,
+    "first_latency_s": 0.831461237045005,
+    "reference_age_s": 9.435535192489624
+  }
+}

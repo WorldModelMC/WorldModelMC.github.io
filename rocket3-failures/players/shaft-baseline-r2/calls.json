@@ -1,0 +1,159 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.05
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.1
+        },
+        {
+          "keys": [
+            "hotbar.1"
+          ],
+          "camera": [
+            180,
+            0
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            180,
+            0
+          ],
+          "seconds": 0.15
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "jump"
+          ],
+          "buttons": [
+            "use"
+          ],
+          "seconds": 1.5
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "jump"
+          ],
+          "buttons": [
+            "use"
+          ],
+          "seconds": 0.6
+        },
+        {
+          "camera": [
+            -70,
+            0
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward"
+          ],
+          "camera": [
+            15,
+            -65
+          ],
+          "seconds": 0.5
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "jump",
+            "forward"
+          ],
+          "seconds": 0.6
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "jump",
+            "forward"
+          ],
+          "seconds": 0.5
+        }
+      ]
+    },
+    "status": "completed"
+  }
+]

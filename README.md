@@ -8,3 +8,7 @@ The simulation runner and research source remain in the private
 `WorldModelMC/minecraft-perception-lab` repository. Only results intended for the
 public website belong here. New recordings and result JSON can be copied into this
 repository and pushed to `main` to publish them.
+
+## Use-case comparisons
+
+[Browse SAM and ROCKET comparisons](https://worldmodelmc.github.io/comparisons/). Videos and statistics are grouped by use case with exact model and test-condition labels. GitHub Pages is the canonical publication.

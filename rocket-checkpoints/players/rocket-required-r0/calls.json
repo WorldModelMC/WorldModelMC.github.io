@@ -1,0 +1,76 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "is_error": false
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "box": [
+        584,
+        151,
+        697,
+        496
+      ],
+      "event_id": 2,
+      "frame_id": "1a06e5184b43467f802ac23635e1ee72",
+      "seconds": 5
+    },
+    "is_error": false
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.55
+        },
+        {
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.8
+        }
+      ]
+    },
+    "is_error": false
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            30,
+            0
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.7
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.35
+        },
+        {
+          "camera": [
+            -65,
+            0
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.8
+        }
+      ]
+    },
+    "is_error": false
+  }
+]

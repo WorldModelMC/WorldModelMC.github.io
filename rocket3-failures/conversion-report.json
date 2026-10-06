@@ -1,0 +1,543 @@
+{
+ "summary": [
+  "converted 289 chunks (1513 sections) of Agent 18137 -> /work3/s216136/rocket3-failures-20261006/converted-astra425",
+  "height: shift +0, player y 63.0 -> 63.0; kept source y 1..255; cropped non-air: 4216653 below, 0 above",
+  "blocks kept: 4977430 non-air; same 94.7%, lost a property 0.0%, fallback 5.1%, removed 0.2%, unknown 0.0%",
+  "top fallbacks: deepslate -> stone (181014), copper_ore -> stone (34525), dripstone_block -> stone (14784), short_grass -> grass (7287), smooth_basalt -> basalt (3520), calcite -> diorite (2902)",
+  "items (by count): same 295, fallback 7, removed 1, unknown 0",
+  "block entities: 20 converted, 14 created for blocks that need one, 22 dropped (22 cropped with their blocks)",
+  "entities: 108 kept, 50 dropped (44 outside y 0..255)"
+ ],
+ "height": {
+  "y_shift": 0,
+  "mode": "auto",
+  "player_y_26": 63.0,
+  "player_y_116": 63.0,
+  "source_y_range": [
+   -64,
+   319
+  ],
+  "kept_source_y": [
+   1,
+   255
+  ],
+  "note": "1.16 keeps y 0..255; source blocks shifted by y_shift, the rest cropped; y=0 set to bedrock",
+  "cropped_non_air": {
+   "below": 4216653
+  },
+  "cropped_by_block": {
+   "deepslate": 3734456,
+   "tuff": 317138,
+   "gravel": 61811,
+   "granite": 11909,
+   "dripstone_block": 9555,
+   "deepslate_redstone_ore": 9495,
+   "andesite": 8727,
+   "lava": 8653,
+   "diorite": 8183,
+   "deepslate_diamond_ore": 7003,
+   "deepslate_iron_ore": 5987,
+   "deepslate_gold_ore": 5940,
+   "water": 5447,
+   "deepslate_lapis_ore": 3653,
+   "deepslate_copper_ore": 3345,
+   "oak_planks": 2750,
+   "pointed_dripstone": 2039,
+   "oak_fence": 1681,
+   "dirt": 1625,
+   "smooth_basalt": 1491,
+   "calcite": 1138,
+   "amethyst_block": 840,
+   "cobblestone": 700,
+   "rail": 543,
+   "cobweb": 514
+  },
+  "under_bedrock_floor": 70014,
+  "under_bedrock_floor_by_block": {
+   "deepslate": 51139,
+   "granite": 5093,
+   "andesite": 4033,
+   "diorite": 3896,
+   "tuff": 2030,
+   "dirt": 1098,
+   "gravel": 804,
+   "dripstone_block": 353,
+   "water": 320,
+   "deepslate_iron_ore": 301
+  }
+ },
+ "source": {
+  "path": "/work3/s216136/rocket3-failures-20261006/source/astra425",
+  "world": "Agent 18137",
+  "version": "26.3",
+  "data_version": 5023,
+  "checkpoint": "2026-09-27_gpt-6-astra_step000425"
+ },
+ "output": {
+  "world": "/work3/s216136/rocket3-failures-20261006/converted-astra425",
+  "version": "1.16.1",
+  "data_version": 2567
+ },
+ "params": {
+  "radius": 8,
+  "y_shift": "auto",
+  "overrides": [],
+  "entities": true
+ },
+ "chunks": {
+  "radius": 8,
+  "requested": 289,
+  "converted": 289,
+  "skipped_not_fully_generated": 0,
+  "missing_in_source": 0,
+  "sections_written": 1513,
+  "dimension": "overworld"
+ },
+ "player": {
+  "source": "players/data/5a673ca3-e48c-3a8d-9b61-f6a0b57db3ca.dat",
+  "dimension": "overworld",
+  "pos_26": [
+   -283.43759098512544,
+   63.0,
+   -57.30000001192093
+  ],
+  "pos_116": [
+   -283.43759098512544,
+   63.0,
+   -57.30000001192093
+  ],
+  "rotation": [
+   161.69989013671875,
+   -90.0
+  ],
+  "health": 20.0,
+  "food": 20,
+  "saturation": 2.6000003814697266,
+  "air": 300,
+  "xp_level": 3,
+  "selected_slot": 5,
+  "effects": 0,
+  "recipes_known": 167,
+  "recipes_kept": 151,
+  "respawn": "none",
+  "items": [
+   {
+    "slot": 0,
+    "where": "inventory",
+    "item": "cobblestone",
+    "count": 64,
+    "to": "cobblestone",
+    "to_count": 64
+   },
+   {
+    "slot": 1,
+    "where": "inventory",
+    "item": "bucket",
+    "count": 1,
+    "to": "bucket",
+    "to_count": 1
+   },
+   {
+    "slot": 2,
+    "where": "inventory",
+    "item": "stone_pickaxe",
+    "count": 1,
+    "to": "stone_pickaxe",
+    "to_count": 1
+   },
+   {
+    "slot": 3,
+    "where": "inventory",
+    "item": "dirt",
+    "count": 8,
+    "to": "dirt",
+    "to_count": 8
+   },
+   {
+    "slot": 4,
+    "where": "inventory",
+    "item": "cobblestone",
+    "count": 64,
+    "to": "cobblestone",
+    "to_count": 64
+   },
+   {
+    "slot": 5,
+    "where": "inventory",
+    "item": "stone_shovel",
+    "count": 1,
+    "to": "stone_shovel",
+    "to_count": 1
+   },
+   {
+    "slot": 6,
+    "where": "inventory",
+    "item": "stone_axe",
+    "count": 1,
+    "to": "stone_axe",
+    "to_count": 1
+   },
+   {
+    "slot": 7,
+    "where": "inventory",
+    "item": "torch",
+    "count": 6,
+    "to": "torch",
+    "to_count": 6
+   },
+   {
+    "slot": 8,
+    "where": "inventory",
+    "item": "cobblestone",
+    "count": 11,
+    "to": "cobblestone",
+    "to_count": 11
+   },
+   {
+    "slot": 9,
+    "where": "inventory",
+    "item": "cobblestone",
+    "count": 64,
+    "to": "cobblestone",
+    "to_count": 64
+   },
+   {
+    "slot": 10,
+    "where": "inventory",
+    "item": "rotten_flesh",
+    "count": 2,
+    "to": "rotten_flesh",
+    "to_count": 2
+   },
+   {
+    "slot": 11,
+    "where": "inventory",
+    "item": "white_wool",
+    "count": 1,
+    "to": "white_wool",
+    "to_count": 1
+   },
+   {
+    "slot": 12,
+    "where": "inventory",
+    "item": "andesite",
+    "count": 14,
+    "to": "andesite",
+    "to_count": 14
+   },
+   {
+    "slot": 13,
+    "where": "inventory",
+    "item": "pointed_dripstone",
+    "count": 1,
+    "to": null,
+    "to_count": 0
+   },
+   {
+    "slot": 14,
+    "where": "inventory",
+    "item": "porkchop",
+    "count": 1,
+    "to": "porkchop",
+    "to_count": 1
+   },
+   {
+    "slot": 15,
+    "where": "inventory",
+    "item": "leather",
+    "count": 1,
+    "to": "leather",
+    "to_count": 1
+   },
+   {
+    "slot": 16,
+    "where": "inventory",
+    "item": "flint",
+    "count": 3,
+    "to": "flint",
+    "to_count": 3
+   },
+   {
+    "slot": 17,
+    "where": "inventory",
+    "item": "gravel",
+    "count": 6,
+    "to": "gravel",
+    "to_count": 6
+   },
+   {
+    "slot": 18,
+    "where": "inventory",
+    "item": "wooden_pickaxe",
+    "count": 1,
+    "to": "wooden_pickaxe",
+    "to_count": 1
+   },
+   {
+    "slot": 19,
+    "where": "inventory",
+    "item": "stone_pickaxe",
+    "count": 1,
+    "to": "stone_pickaxe",
+    "to_count": 1
+   },
+   {
+    "slot": 20,
+    "where": "inventory",
+    "item": "diorite",
+    "count": 11,
+    "to": "diorite",
+    "to_count": 11
+   },
+   {
+    "slot": 21,
+    "where": "inventory",
+    "item": "granite",
+    "count": 2,
+    "to": "granite",
+    "to_count": 2
+   },
+   {
+    "slot": 22,
+    "where": "inventory",
+    "item": "dripstone_block",
+    "count": 1,
+    "to": "stone",
+    "to_count": 1
+   },
+   {
+    "slot": 23,
+    "where": "inventory",
+    "item": "raw_iron",
+    "count": 6,
+    "to": "iron_ore",
+    "to_count": 6
+   },
+   {
+    "slot": 24,
+    "where": "inventory",
+    "item": "furnace",
+    "count": 1,
+    "to": "furnace",
+    "to_count": 1
+   },
+   {
+    "slot": 25,
+    "where": "inventory",
+    "item": "coal",
+    "count": 1,
+    "to": "coal",
+    "to_count": 1
+   },
+   {
+    "slot": 26,
+    "where": "inventory",
+    "item": "oak_planks",
+    "count": 1,
+    "to": "oak_planks",
+    "to_count": 1
+   },
+   {
+    "slot": 27,
+    "where": "inventory",
+    "item": "crafting_table",
+    "count": 1,
+    "to": "crafting_table",
+    "to_count": 1
+   },
+   {
+    "slot": 33,
+    "where": "inventory",
+    "item": "iron_ingot",
+    "count": 2,
+    "to": "iron_ingot",
+    "to_count": 2
+   },
+   {
+    "slot": 34,
+    "where": "inventory",
+    "item": "stick",
+    "count": 1,
+    "to": "stick",
+    "to_count": 1
+   },
+   {
+    "slot": 35,
+    "where": "inventory",
+    "item": "cooked_beef",
+    "count": 2,
+    "to": "cooked_beef",
+    "to_count": 2
+   }
+  ]
+ },
+ "level": {
+  "level_name": "Agent 18137 (1.16.1)",
+  "seed": 8101409772240418137,
+  "generate_structures": true,
+  "time": 22539,
+  "day_time": 22539,
+  "time_of_day": 22539,
+  "difficulty": "easy",
+  "game_type": "survival",
+  "cheats": true,
+  "spawn": [
+   -284,
+   63,
+   -58
+  ],
+  "weather": {
+   "raining": false,
+   "thundering": false
+  },
+  "game_rules_copied": 30,
+  "template": null
+ },
+ "blocks": {
+  "total_non_air": 4977430,
+  "same": 4713214,
+  "props": 0,
+  "fallback": 253211,
+  "removed": 11005,
+  "unknown": 0,
+  "fallback_by_mapping": {
+   "deepslate -> stone": 181014,
+   "copper_ore -> stone": 34525,
+   "dripstone_block -> stone": 14784,
+   "short_grass -> grass": 7287,
+   "smooth_basalt -> basalt": 3520,
+   "calcite -> diorite": 2902,
+   "amethyst_block -> stone": 2312,
+   "dirt_path -> grass_path": 1622,
+   "deepslate_copper_ore -> stone": 1454,
+   "tuff -> andesite": 1320,
+   "deepslate_iron_ore -> iron_ore": 1012,
+   "deepslate_lapis_ore -> lapis_ore": 312,
+   "deepslate_coal_ore -> coal_ore": 213,
+   "budding_amethyst -> stone": 212,
+   "deepslate_gold_ore -> gold_ore": 203,
+   "bush -> grass": 179,
+   "deepslate_redstone_ore -> redstone_ore": 155,
+   "deepslate_diamond_ore -> diamond_ore": 81,
+   "white_wool_stairs -> oak_stairs": 40,
+   "raw_copper_block -> stone": 23,
+   "infested_deepslate -> infested_stone": 22,
+   "firefly_bush -> grass": 11,
+   "iron_chain -> chain": 5,
+   "straw_bed -> yellow_bed": 2,
+   "oxidized_copper_chest -> chest": 1
+  },
+  "removed_by_mapping": {
+   "leaf_litter -> air": 7393,
+   "pointed_dripstone -> air": 2902,
+   "glow_lichen -> air": 283,
+   "pointed_dripstone -> water": 181,
+   "wildflowers -> air": 112,
+   "glow_lichen -> water": 85,
+   "small_amethyst_bud -> air": 25,
+   "medium_amethyst_bud -> air": 10,
+   "amethyst_cluster -> air": 7,
+   "large_amethyst_bud -> air": 7
+  },
+  "unknown_by_block": {},
+  "properties_dropped": {}
+ },
+ "biomes": {
+  "cells_4x4x4": 295936,
+  "same": {
+   "plains": 134696,
+   "forest": 77195,
+   "river": 56287
+  },
+  "fallback": {
+   "dripstone_caves -> plains": 12524,
+   "meadow -> plains": 9515,
+   "dripstone_caves -> forest": 4662,
+   "dripstone_caves -> river": 1057
+  },
+  "unknown": {}
+ },
+ "block_entities": {
+  "converted": {
+   "chest": 9,
+   "mob_spawner": 3,
+   "campfire": 2,
+   "furnace": 2,
+   "beehive": 1,
+   "bell": 1,
+   "brewing_stand": 1,
+   "lectern": 1
+  },
+  "created_without_source": {
+   "bed": 14
+  },
+  "dropped": {
+   "chest (cropped)": 11,
+   "mob_spawner (cropped)": 11
+  },
+  "lossy": {},
+  "loot_tables_dropped": {
+   "chests/abandoned_camp_common_chest": 2,
+   "chests/abandoned_camp_secret_chest": 1
+  }
+ },
+ "items": {
+  "same": 295,
+  "fallback": {
+   "raw_iron -> iron_ore": 6,
+   "dripstone_block -> stone": 1
+  },
+  "removed": {
+   "pointed_dripstone": 1
+  },
+  "unknown": {},
+  "lost": {
+   "player inventory": {
+    "pointed_dripstone": 1
+   }
+  },
+  "damage_rescaled": {},
+  "count_clamped": {},
+  "components_dropped": {},
+  "enchantments_dropped": {}
+ },
+ "entities": {
+  "kept": {
+   "pig": 13,
+   "zombie": 11,
+   "item": 10,
+   "skeleton": 9,
+   "chicken": 8,
+   "spider": 8,
+   "squid": 8,
+   "bat": 7,
+   "creeper": 7,
+   "villager": 6,
+   "glow_squid -> squid": 5,
+   "horse": 5,
+   "cow": 4,
+   "cat": 2,
+   "salmon": 2,
+   "drowned": 1,
+   "iron_golem": 1,
+   "sheep": 1
+  },
+  "dropped": {
+   "skeleton (outside y 0..255)": 14,
+   "creeper (outside y 0..255)": 10,
+   "bat (outside y 0..255)": 9,
+   "spider (outside y 0..255)": 5,
+   "zombie (outside y 0..255)": 5,
+   "chest_minecart": 4,
+   "cushion": 2,
+   "item (outside y 0..255)": 1
+  },
+  "lossy": {}
+ },
+ "ticks": {
+  "fluid": 309,
+  "block": 136
+ },
+ "warnings": [],
+ "elapsed_s": 5.51
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "episodes": 5,
+  "checks": [
+    "all restored setup checks passed",
+    "all grader polls Easy/20TPS/unpaused/unfrozen",
+    "strictly increasing grader time",
+    "full health and no death throughout polls",
+    "zero initial logs and at least three final logs",
+    "all raw video frames decode and match capture log count",
+    "1280x720 raw video",
+    "capture/game/wall time within1.5seconds"
+  ],
+  "limits": [
+    "one artificial checkpoint",
+    "adaptive prompt variants",
+    "recording uses nominal20fps; exact timing in video-frames.jsonl",
+    "token cost unavailable because external scorer interrupts CLI before turn-completed usage",
+    "sampled visual review separate from automated validation"
+  ]
+}
