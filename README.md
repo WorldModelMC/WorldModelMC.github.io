@@ -12,3 +12,7 @@ repository and pushed to `main` to publish them.
 ## Use-case comparisons
 
 [Browse SAM and ROCKET comparisons](https://worldmodelmc.github.io/comparisons/). Videos and statistics are grouped by use case with exact model and test-condition labels. GitHub Pages is the canonical publication.
+
+## Active presentation
+
+The homepage and `/comparisons/` show the focused SAM3.1 study and current-session ROCKET results. `/legacy/` contains earlier and retired exploratory directions. Keep old media URLs for provenance. Do not restore the old broad comparison generator as the homepage. New study cards must say setup until actual results exist, and show exact prompts/model versions beside videos. Publish here on GitHub Pages, never the legacy ChatGPT Site.

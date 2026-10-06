@@ -1,0 +1,272 @@
+[
+  {
+    "id": "overworld-development-0",
+    "split": "development",
+    "cohort": "overworld",
+    "seconds": 120,
+    "seed": 716031,
+    "purpose": "approach, late arrival, occlusion, target-absent intervals",
+    "status": "not_captured"
+  },
+  {
+    "id": "overworld-development-1",
+    "split": "development",
+    "cohort": "overworld",
+    "seconds": 120,
+    "seed": 716032,
+    "purpose": "approach, late arrival, occlusion, target-absent intervals",
+    "status": "not_captured"
+  },
+  {
+    "id": "overworld-mixed-0",
+    "split": "evaluation",
+    "cohort": "overworld",
+    "seconds": 120,
+    "seed": 816031,
+    "purpose": "mixed species, density sections 6/12/24",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "overworld-mixed-1",
+    "split": "evaluation",
+    "cohort": "overworld",
+    "seconds": 120,
+    "seed": 816032,
+    "purpose": "mixed species, density sections 6/12/24",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "overworld-exploration",
+    "split": "evaluation",
+    "cohort": "overworld",
+    "seconds": 300,
+    "seed": 916031,
+    "purpose": "long horizon; all visible mobs scored including out-of-bank",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "nether-development-0",
+    "split": "development",
+    "cohort": "nether",
+    "seconds": 120,
+    "seed": 716131,
+    "purpose": "approach, late arrival, occlusion, target-absent intervals",
+    "status": "not_captured"
+  },
+  {
+    "id": "nether-development-1",
+    "split": "development",
+    "cohort": "nether",
+    "seconds": 120,
+    "seed": 716132,
+    "purpose": "approach, late arrival, occlusion, target-absent intervals",
+    "status": "not_captured"
+  },
+  {
+    "id": "nether-mixed-0",
+    "split": "evaluation",
+    "cohort": "nether",
+    "seconds": 120,
+    "seed": 816131,
+    "purpose": "mixed species, density sections 6/12/24",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "nether-mixed-1",
+    "split": "evaluation",
+    "cohort": "nether",
+    "seconds": 120,
+    "seed": 816132,
+    "purpose": "mixed species, density sections 6/12/24",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "nether-exploration",
+    "split": "evaluation",
+    "cohort": "nether",
+    "seconds": 300,
+    "seed": 916131,
+    "purpose": "long horizon; all visible mobs scored including out-of-bank",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "ore-development-0",
+    "split": "development",
+    "cohort": "ore",
+    "seconds": 120,
+    "seed": 1717031,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "ore-development-1",
+    "split": "development",
+    "cohort": "ore",
+    "seconds": 120,
+    "seed": 1717132,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "ore-evaluation-0",
+    "split": "evaluation",
+    "cohort": "ore",
+    "seconds": 90,
+    "seed": 1817231,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "ore-evaluation-1",
+    "split": "evaluation",
+    "cohort": "ore",
+    "seconds": 90,
+    "seed": 1817332,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "ore-evaluation-2",
+    "split": "evaluation",
+    "cohort": "ore",
+    "seconds": 90,
+    "seed": 1817433,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "ore-evaluation-3",
+    "split": "evaluation",
+    "cohort": "ore",
+    "seconds": 90,
+    "seed": 1817534,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "structure-development-0",
+    "split": "development",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1717631,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "structure-development-1",
+    "split": "development",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1717732,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "structure-evaluation-0",
+    "split": "evaluation",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1817831,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "structure-evaluation-1",
+    "split": "evaluation",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1817932,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "structure-evaluation-2",
+    "split": "evaluation",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1818033,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "structure-evaluation-3",
+    "split": "evaluation",
+    "cohort": "structure",
+    "seconds": 120,
+    "seed": 1818134,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-development-0",
+    "split": "development",
+    "cohort": "hazard",
+    "seconds": 120,
+    "seed": 1718231,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "hazard-development-1",
+    "split": "development",
+    "cohort": "hazard",
+    "seconds": 120,
+    "seed": 1718332,
+    "purpose": "positives and reviewed negatives",
+    "status": "not_captured"
+  },
+  {
+    "id": "hazard-evaluation-0",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818431,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-evaluation-1",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818532,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-evaluation-2",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818633,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-evaluation-3",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818734,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-evaluation-4",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818835,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  },
+  {
+    "id": "hazard-evaluation-5",
+    "split": "evaluation",
+    "cohort": "hazard",
+    "seconds": 60,
+    "seed": 1818936,
+    "purpose": "held-out moving route",
+    "status": "requires_prompt_lock"
+  }
+]

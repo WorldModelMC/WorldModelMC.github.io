@@ -1,0 +1,226 @@
+{
+  "study": "sam31-focused-20261006",
+  "status": "planned_not_executed",
+  "model": "facebook/sam3.1",
+  "checkpoint_revision": "daa63191845a41281374e725f4c9e51c7a824460",
+  "score_threshold": 0.5,
+  "inference_frame_hz": 5,
+  "review_video_fps": 20,
+  "minecraft": "1.16.1",
+  "difficulty": "easy",
+  "fov": 70,
+  "tps": 20,
+  "compute": [
+    "Jonathan Mac",
+    "DTU HPC"
+  ],
+  "cohorts": {
+    "overworld": [
+      "zombie",
+      "skeleton",
+      "creeper",
+      "spider",
+      "enderman",
+      "cow"
+    ],
+    "nether": [
+      "blaze",
+      "ghast",
+      "piglin",
+      "magma cube"
+    ],
+    "ore": [
+      "coal ore",
+      "iron ore",
+      "gold ore",
+      "redstone ore",
+      "lapis lazuli ore",
+      "diamond ore",
+      "emerald ore",
+      "nether quartz ore",
+      "nether gold ore",
+      "ancient debris"
+    ],
+    "structure": [
+      "nether fortress",
+      "bastion remnant",
+      "village",
+      "ruined portal",
+      "mineshaft"
+    ],
+    "hazard": [
+      "hole in the ground",
+      "cave opening",
+      "cliff edge"
+    ]
+  },
+  "prompt_candidates": {
+    "zombie": [
+      "minecraft zombie",
+      "zombie",
+      "minecraft green zombie"
+    ],
+    "skeleton": [
+      "minecraft skeleton",
+      "skeleton",
+      "minecraft skeleton holding a bow"
+    ],
+    "creeper": [
+      "minecraft creeper",
+      "creeper",
+      "minecraft green creeper"
+    ],
+    "spider": [
+      "minecraft spider",
+      "spider",
+      "minecraft spider with red eyes"
+    ],
+    "enderman": [
+      "minecraft enderman",
+      "enderman",
+      "minecraft tall black enderman"
+    ],
+    "cow": [
+      "minecraft cow",
+      "cow",
+      "minecraft brown and white cow"
+    ],
+    "blaze": [
+      "minecraft blaze",
+      "blaze",
+      "minecraft flying blaze"
+    ],
+    "ghast": [
+      "minecraft ghast",
+      "ghast",
+      "minecraft white flying ghast"
+    ],
+    "piglin": [
+      "minecraft piglin",
+      "piglin",
+      "minecraft piglin with golden weapon"
+    ],
+    "magma cube": [
+      "minecraft magma cube",
+      "magma cube",
+      "minecraft red magma cube"
+    ],
+    "coal ore": [
+      "minecraft coal ore",
+      "coal ore",
+      "minecraft coal ore block"
+    ],
+    "iron ore": [
+      "minecraft iron ore",
+      "iron ore",
+      "minecraft iron ore block"
+    ],
+    "gold ore": [
+      "minecraft gold ore",
+      "gold ore",
+      "minecraft gold ore block"
+    ],
+    "redstone ore": [
+      "minecraft redstone ore",
+      "redstone ore",
+      "minecraft redstone ore block"
+    ],
+    "lapis lazuli ore": [
+      "minecraft lapis lazuli ore",
+      "lapis lazuli ore",
+      "minecraft lapis lazuli ore block"
+    ],
+    "diamond ore": [
+      "minecraft diamond ore",
+      "diamond ore",
+      "minecraft diamond ore block"
+    ],
+    "emerald ore": [
+      "minecraft emerald ore",
+      "emerald ore",
+      "minecraft emerald ore block"
+    ],
+    "nether quartz ore": [
+      "minecraft nether quartz ore",
+      "nether quartz ore",
+      "minecraft nether quartz ore block"
+    ],
+    "nether gold ore": [
+      "minecraft nether gold ore",
+      "nether gold ore",
+      "minecraft nether gold ore block"
+    ],
+    "ancient debris": [
+      "minecraft ancient debris",
+      "ancient debris",
+      "minecraft ancient debris block"
+    ],
+    "nether fortress": [
+      "minecraft nether fortress",
+      "nether fortress",
+      "minecraft nether brick fortress"
+    ],
+    "bastion remnant": [
+      "minecraft bastion remnant",
+      "bastion remnant",
+      "minecraft blackstone bastion"
+    ],
+    "village": [
+      "minecraft village",
+      "village",
+      "minecraft village houses"
+    ],
+    "ruined portal": [
+      "minecraft ruined portal",
+      "ruined portal",
+      "minecraft broken obsidian portal"
+    ],
+    "mineshaft": [
+      "minecraft mineshaft",
+      "mineshaft",
+      "minecraft wooden mineshaft"
+    ],
+    "hole in the ground": [
+      "minecraft hole in the ground",
+      "hole in the ground",
+      "minecraft pit in the ground"
+    ],
+    "cave opening": [
+      "minecraft cave opening",
+      "cave opening",
+      "minecraft cave entrance"
+    ],
+    "cliff edge": [
+      "minecraft cliff edge",
+      "cliff edge",
+      "minecraft terrain drop off"
+    ]
+  },
+  "gate": {
+    "development_only": true,
+    "max_candidates_per_class": 3,
+    "max_selected_prompts_per_class": 2,
+    "minimum_clips": 2,
+    "minimum_tp_observations": 20,
+    "minimum_absent_seconds": 60,
+    "minimum_precision": 0.9,
+    "maximum_fp_per_minute": 1,
+    "union_minimum_recall_gain": 0.05
+  },
+  "inference_input_fields": [
+    "frame_path",
+    "capture_timestamp",
+    "selected_prompts",
+    "prior_model_state"
+  ],
+  "scorer_only_fields": [
+    "entity_uuid",
+    "entity_type",
+    "entity_pose",
+    "camera_matrix",
+    "depth",
+    "block_state",
+    "structure_membership"
+  ],
+  "locked_prompts": null
+}
