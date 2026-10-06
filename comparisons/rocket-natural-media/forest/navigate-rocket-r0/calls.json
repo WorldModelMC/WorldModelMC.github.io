@@ -1,0 +1,145 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            12,
+            -90
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            10,
+            -85
+          ],
+          "seconds": 0.5
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -28,
+            65
+          ],
+          "keys": [
+            "back"
+          ],
+          "seconds": 0.8
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "6c631ba89e4b41bcb62e7a33c3b457c0",
+      "box": [
+        387,
+        205,
+        494,
+        290
+      ],
+      "event_id": 6,
+      "seconds": 4
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "30444c2bcd764ab19fc3c63c94d1dac2",
+      "box": [
+        907,
+        5,
+        977,
+        125
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "d14c7cd7f03b489692d959277e4c9fa3",
+      "box": [
+        258,
+        185,
+        323,
+        222
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "e6cfc74939e94f4aae44a6354196d956",
+      "box": [
+        890,
+        21,
+        989,
+        156
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "92a649fad70240978c39b10276239660",
+      "box": [
+        594,
+        311,
+        631,
+        358
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "e19b2060ceff4b75aa3fde794c2b124f",
+      "box": [
+        430,
+        116,
+        518,
+        267
+      ],
+      "event_id": 6,
+      "seconds": 4
+    },
+    "status": "completed"
+  }
+]

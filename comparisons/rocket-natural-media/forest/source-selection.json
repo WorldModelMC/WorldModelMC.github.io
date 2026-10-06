@@ -1,0 +1,14 @@
+{
+  "path": "/work3/s234842/claudeplay-backup/laptopdesk/gptdesk/runs/2026-09-30_gpt-6.1-sol/checkpoints/2026-09-30_gpt-6.1-sol_step000050",
+  "id": "2026-09-30_gpt-6.1-sol_step000050",
+  "created": "2026-09-30T08:57:59+02:00",
+  "game": {
+    "version": "26.3",
+    "world": "Agent 18137 (2)"
+  },
+  "episode": {
+    "run": "2026-09-30_gpt-6.1-sol",
+    "player": "claude"
+  },
+  "reason": null
+}

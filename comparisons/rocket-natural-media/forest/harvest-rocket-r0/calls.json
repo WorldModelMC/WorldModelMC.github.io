@@ -1,0 +1,289 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "9676010a349e4bf0bdb97f8f58e963eb",
+      "box": [
+        640,
+        400,
+        696,
+        454
+      ],
+      "event_id": 6,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            22,
+            -35
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -12,
+            130
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -35,
+            0
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "723caff88e764f6daa99c96e287ed098",
+      "box": [
+        833,
+        147,
+        1039,
+        331
+      ],
+      "event_id": 2,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "ba9efde7e6b14660a9dde99db8e7d96f",
+      "box": [
+        275,
+        366,
+        612,
+        617
+      ],
+      "event_id": 2,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            8,
+            -19
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "89a2acaf778b4af49f7c90bef8c617f3",
+      "box": [
+        449,
+        318,
+        769,
+        546
+      ],
+      "event_id": 2,
+      "seconds": 2
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward"
+          ],
+          "camera": [
+            -24,
+            -12
+          ],
+          "seconds": 0.5
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            -65
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "5771e8bb7a364de4a0fd64e405b8a1ad",
+      "box": [
+        315,
+        156,
+        818,
+        612
+      ],
+      "event_id": 2,
+      "seconds": 2
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "12f58fea1b194cb4a29e57c67b760dff",
+      "box": [
+        329,
+        170,
+        809,
+        607
+      ],
+      "event_id": 2,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 1.2
+        },
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.5
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.3
+        },
+        {
+          "camera": [
+            -65,
+            0
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -65,
+            0
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "68cdacdebb1a40939c3f300978421495",
+      "box": [
+        330,
+        288,
+        710,
+        540
+      ],
+      "event_id": 2,
+      "seconds": 3
+    },
+    "status": "completed"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            12,
+            -90
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -12,
+            0
+          ],
+          "keys": [
+            "forward",
+            "jump"
+          ],
+          "seconds": 1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            -60
+          ],
+          "seconds": 0.2
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.7
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            23
+          ],
+          "keys": [
+            "forward",
+            "jump"
+          ],
+          "seconds": 2.3
+        }
+      ]
+    },
+    "status": "completed"
+  }
+]
