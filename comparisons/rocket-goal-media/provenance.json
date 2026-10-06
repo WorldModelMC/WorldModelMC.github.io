@@ -1,0 +1,21 @@
+{
+  "shaft_goal": {
+    "wall_time": 1791304506.8067036,
+    "kind": "option_start",
+    "box": [
+      466,
+      1,
+      1178,
+      361
+    ],
+    "event_id": 2,
+    "frame_id": "4555c33eba894a8d86013b68df7ed983",
+    "seconds": 2,
+    "reference_age_s": 9.435535192489624
+  },
+  "shaft_episode_start_epoch": 1791304480.2584207,
+  "option_start_relative_s": 26.548282861709595,
+  "frames": 1084,
+  "alignment": "Video capture-relative timestamps aligned to episode_start epoch; sub-frame start offset not measured. Gameplay is not the exact policy tensor stream.",
+  "overlay": "Exact original rectangular mask on its matching historical reference only. No current-view tracking claimed."
+}
