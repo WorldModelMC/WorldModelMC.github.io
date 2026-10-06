@@ -1,0 +1,322 @@
+[
+  {
+    "episode": "harvest-baseline-r0",
+    "task": "harvest",
+    "arm": "baseline",
+    "outcome": "success",
+    "reason": "four_new_logs",
+    "wall_seconds": 108.58622976811603,
+    "game_seconds": 109.35,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 4,
+    "max_y": 79.24918707874468,
+    "max_displacement": 8.10340137678915,
+    "tool_calls": 17,
+    "rocket_options": [],
+    "navigation_root": null,
+    "navigation_hold_s": 0,
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 2165,
+    "wall_time_video_frames": 2172
+  },
+  {
+    "episode": "harvest-rocket-r0",
+    "task": "harvest",
+    "arm": "rocket",
+    "outcome": "success",
+    "reason": "four_new_logs",
+    "wall_seconds": 87.56004209117964,
+    "game_seconds": 87.55,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 4,
+    "max_y": 78.0,
+    "max_displacement": 15.80344665564655,
+    "tool_calls": 11,
+    "rocket_options": [
+      {
+        "option_id": "ffc07dc592ee41609668d916c9736768",
+        "event_id": 6,
+        "reference_age_s": 3.876518964767456,
+        "predictions": 59,
+        "issued": 58,
+        "attack": 0,
+        "forward": 55,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "3ee6abf107c94c8884d367ed6d334f27",
+        "box": [
+          622,
+          212,
+          698,
+          320
+        ]
+      },
+      {
+        "option_id": "f6b66642b55244e297de6b4122a507d8",
+        "event_id": 6,
+        "reference_age_s": 4.581553220748901,
+        "predictions": 38,
+        "issued": 37,
+        "attack": 0,
+        "forward": 13,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "68bd8ce2dec74d639ae0228c4f8741ef",
+        "box": [
+          330,
+          343,
+          425,
+          455
+        ]
+      },
+      {
+        "option_id": "5274659fba314cd8a7ac75f9265a4b72",
+        "event_id": 2,
+        "reference_age_s": 5.692720651626587,
+        "predictions": 98,
+        "issued": 97,
+        "attack": 75,
+        "forward": 21,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "dc67e0b03fe44e898e5286ed3fbae373",
+        "box": [
+          908,
+          366,
+          1077,
+          534
+        ]
+      },
+      {
+        "option_id": "68966e192c8f4a16b1bcd1b5ab0efe2e",
+        "event_id": 2,
+        "reference_age_s": 4.409467935562134,
+        "predictions": 94,
+        "issued": 93,
+        "attack": 59,
+        "forward": 7,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "4a4348adf91b4377a9d1bb3b65087c49",
+        "box": [
+          304,
+          408,
+          649,
+          614
+        ]
+      },
+      {
+        "option_id": "edd4d82701374d88bc10d2701bc68a7b",
+        "event_id": 2,
+        "reference_age_s": 4.081294775009155,
+        "predictions": 46,
+        "issued": 45,
+        "attack": 22,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "9ec5dc0b6575493fad88ab485c04113e",
+        "box": [
+          492,
+          278,
+          862,
+          503
+        ]
+      },
+      {
+        "option_id": "d4ea203899a44abba02a312751bafac1",
+        "event_id": 2,
+        "reference_age_s": 3.8343546390533447,
+        "predictions": 92,
+        "issued": 91,
+        "attack": 91,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "d448ee1cf4f24abda59171a8222092a5",
+        "box": [
+          475,
+          280,
+          856,
+          547
+        ]
+      },
+      {
+        "option_id": "3ccc4914e98c4635bf7fee9a8916cb29",
+        "event_id": 2,
+        "reference_age_s": 5.743848085403442,
+        "predictions": 48,
+        "issued": 47,
+        "attack": 46,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "ff3c598fd20549478d8a6c68a09d6c61",
+        "box": [
+          441,
+          358,
+          863,
+          529
+        ]
+      },
+      {
+        "option_id": "e6b0888d45eb4e4f818474f2a288c3eb",
+        "event_id": 2,
+        "reference_age_s": 4.159021854400635,
+        "predictions": 75,
+        "issued": 74,
+        "attack": 73,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "1654777406dc4f2d8fdedf419e247ffd",
+        "box": [
+          503,
+          326,
+          824,
+          589
+        ]
+      }
+    ],
+    "navigation_root": null,
+    "navigation_hold_s": 0,
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 1744,
+    "wall_time_video_frames": 1752
+  },
+  {
+    "episode": "navigate-baseline-r0",
+    "task": "navigate",
+    "arm": "baseline",
+    "outcome": "timeout",
+    "reason": null,
+    "wall_seconds": 150.87545959791169,
+    "game_seconds": 151.0,
+    "health_lost": 2.0,
+    "died": false,
+    "logs_gained": 0,
+    "max_y": 86.16610926093821,
+    "max_displacement": 25.69291465213113,
+    "tool_calls": 25,
+    "rocket_options": [],
+    "navigation_root": null,
+    "navigation_hold_s": 0,
+    "restore_clock_drift": {
+      "game_time": 2,
+      "day_time": 2
+    },
+    "video_frames": 3006,
+    "wall_time_video_frames": 3018
+  },
+  {
+    "episode": "navigate-rocket-r0",
+    "task": "navigate",
+    "arm": "rocket",
+    "outcome": "success",
+    "reason": "different_higher_tree_reached",
+    "wall_seconds": 49.92669764906168,
+    "game_seconds": 50.65,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 0,
+    "max_y": 85.02442408821369,
+    "max_displacement": 38.037459588195055,
+    "tool_calls": 7,
+    "rocket_options": [
+      {
+        "option_id": "437c20261e734ad38df4f318b8adec25",
+        "event_id": 6,
+        "reference_age_s": 3.3317337036132812,
+        "predictions": 96,
+        "issued": 95,
+        "attack": 0,
+        "forward": 93,
+        "jump": 12,
+        "use": 0,
+        "goal_frame_id": "ffb7f2e102fe40f2b1b364db861fadf8",
+        "box": [
+          960,
+          205,
+          996,
+          225
+        ]
+      },
+      {
+        "option_id": "c8dbad4ae2af495cb78dcb3cc5b798a8",
+        "event_id": 6,
+        "reference_age_s": 4.797653675079346,
+        "predictions": 97,
+        "issued": 96,
+        "attack": 0,
+        "forward": 68,
+        "jump": 4,
+        "use": 0,
+        "goal_frame_id": "319a35dcd8244dfcb39ec957decbfb4c",
+        "box": [
+          756,
+          143,
+          786,
+          190
+        ]
+      },
+      {
+        "option_id": "e04ad1ef4cdc48c3844b828bb54bb174",
+        "event_id": 6,
+        "reference_age_s": 4.216567516326904,
+        "predictions": 61,
+        "issued": 60,
+        "attack": 0,
+        "forward": 60,
+        "jump": 15,
+        "use": 0,
+        "goal_frame_id": "d443921211ec46baa614549754fe2144",
+        "box": [
+          468,
+          235,
+          542,
+          275
+        ]
+      },
+      {
+        "option_id": "7f74920b366b4639ab0f59652d8e5ecf",
+        "event_id": 6,
+        "reference_age_s": 3.561321496963501,
+        "predictions": 94,
+        "issued": 93,
+        "attack": 0,
+        "forward": 86,
+        "jump": 63,
+        "use": 0,
+        "goal_frame_id": "1d76c2cb895e48a4a1e142f149595f78",
+        "box": [
+          833,
+          62,
+          890,
+          162
+        ]
+      }
+    ],
+    "navigation_root": {
+      "x": -5,
+      "y": 84,
+      "z": -34,
+      "block": "minecraft:spruce_log",
+      "distance_from_start": 38.35372242821682
+    },
+    "navigation_hold_s": 2.0174912810325623,
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 993,
+    "wall_time_video_frames": 999
+  }
+]
