@@ -16,3 +16,5 @@ repository and pushed to `main` to publish them.
 ## Active presentation
 
 The homepage and `/comparisons/` show the focused SAM3.1 study and current-session ROCKET results. `/legacy/` contains earlier and retired exploratory directions. Keep old media URLs for provenance. Do not restore the old broad comparison generator as the homepage. New study cards must say setup until actual results exist, and show exact prompts/model versions beside videos. Publish here on GitHub Pages, never the legacy ChatGPT Site.
+
+ROCKET goal overlays always belong to the original reference image. Do not paste a fixed reference mask onto later gameplay frames as if it were tracked. Distinguish human-selected diagnostic masks from autonomous Astra-selected goals.
