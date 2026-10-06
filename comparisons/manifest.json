@@ -1,104 +1,17 @@
-[
-  {
-    "slug": "sam-mob-detection",
-    "group": "SAM",
-    "title": "Locate individual mobs",
-    "desc": "SAM3 image model \u00b7 plain class names versus Minecraft-prefixed names on ten mob types at three nominal distances."
-  },
-  {
-    "slug": "sam-threats",
-    "group": "SAM",
-    "title": "Recognize threats around a recorded death",
-    "desc": "Matched prompt comparisons on the source sequence surrounding the historical Astra death."
-  },
-  {
-    "slug": "sam-mob-tracking",
-    "group": "SAM",
-    "title": "Track mobs through movement and occlusion",
-    "desc": "Native SAM3.1 and SAM3 compared with per-frame detection and a SAM3\u2192SAM2 refresh pipeline."
-  },
-  {
-    "slug": "sam-crowds",
-    "group": "SAM",
-    "title": "Find mobs in dense crowds",
-    "desc": "SAM3.1 native video prompt comparison on 16-, 32- and 64-zombie scripted scenes."
-  },
-  {
-    "slug": "sam-holes",
-    "group": "SAM",
-    "title": "Detect holes before a fall",
-    "desc": "Compare the recorded forward-walk baseline with a pixel-only SAM stop rule."
-  },
-  {
-    "slug": "sam-climbing",
-    "group": "SAM",
-    "title": "Terraced hill",
-    "desc": "Matched wording comparisons on Lucas\u2019s recorded scenario: plain terms versus the same terms prefixed with Minecraft."
-  },
-  {
-    "slug": "sam-bank-escape",
-    "group": "SAM",
-    "title": "Flooded-bank escape",
-    "desc": "Matched wording comparisons on Lucas\u2019s recorded scenario: plain terms versus the same terms prefixed with Minecraft."
-  },
-  {
-    "slug": "sam-fortresses",
-    "group": "SAM",
-    "title": "Locate a Nether fortress",
-    "desc": "SAM3 still-image detections on selected fortress views; no navigation or SAM3.1 fortress tracking trial was run."
-  },
-  {
-    "slug": "sam-survival",
-    "group": "SAM",
-    "title": "Survive after escaping a shaft",
-    "desc": "Live Astra-only versus Astra+SAM3 image-helper episodes. This experiment did not use SAM3.1."
-  },
-  {
-    "slug": "rocket-approach",
-    "group": "ROCKET-3",
-    "title": "Approach a visible target",
-    "desc": "Move toward a human-selected redstone-block image goal."
-  },
-  {
-    "slug": "rocket-harvesting",
-    "group": "ROCKET-3",
-    "title": "Break and collect logs",
-    "desc": "Execute a selected-log goal, then compare the separate Astra collection pilot."
-  },
-  {
-    "slug": "rocket-interactions",
-    "group": "ROCKET-3",
-    "title": "Open a chest",
-    "desc": "Test object interaction with a human-selected chest image goal."
-  },
-  {
-    "slug": "rocket-hunt",
-    "group": "ROCKET-3",
-    "title": "Pursue and fight mobs",
-    "desc": "Recorded ROCKET-3 variants and ROCKET-2 references, grouped by the same scenario and layout. All recorded trials are retained."
-  },
-  {
-    "slug": "rocket-protect",
-    "group": "ROCKET-3",
-    "title": "Defend while stationary",
-    "desc": "Recorded ROCKET-3 variants and ROCKET-2 references, grouped by the same scenario and layout. All recorded trials are retained."
-  },
-  {
-    "slug": "rocket-recovery",
-    "group": "ROCKET-3",
-    "title": "Recover from a shaft",
-    "desc": "Astra ordinary controls versus an assigned ROCKET attempt on a converted historical checkpoint."
-  },
-  {
-    "slug": "rocket-waypoints",
-    "group": "ROCKET-3",
-    "title": "Navigate between remembered landmarks",
-    "desc": "Proposed use: provide a previously seen screenshot and target mask as a local waypoint."
-  },
-  {
-    "slug": "home",
-    "group": "Results",
-    "title": "Comparisons by use case",
-    "desc": "Videos and statistics from the SAM and ROCKET experiments. Select the task you want to inspect."
-  }
-]
+{
+  "active_sam": [
+    "sam-prompts",
+    "sam-mobs",
+    "sam-ores",
+    "sam-structures",
+    "sam-walking-hazards"
+  ],
+  "active_rocket": [
+    "rocket-approach",
+    "rocket-harvesting",
+    "rocket-interactions",
+    "rocket-recovery"
+  ],
+  "archive": "/legacy/",
+  "study_status": "setup_not_new_results"
+}
