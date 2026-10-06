@@ -1,0 +1,87 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            -45
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "ffb7f2e102fe40f2b1b364db861fadf8",
+      "box": [
+        960,
+        205,
+        996,
+        225
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "319a35dcd8244dfcb39ec957decbfb4c",
+      "box": [
+        756,
+        143,
+        786,
+        190
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "d443921211ec46baa614549754fe2144",
+      "box": [
+        468,
+        235,
+        542,
+        275
+      ],
+      "event_id": 6,
+      "seconds": 4
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "1d76c2cb895e48a4a1e142f149595f78",
+      "box": [
+        833,
+        62,
+        890,
+        162
+      ],
+      "event_id": 6,
+      "seconds": 5
+    },
+    "status": "completed"
+  }
+]

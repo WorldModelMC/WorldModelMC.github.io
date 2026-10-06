@@ -1,0 +1,157 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "3ee6abf107c94c8884d367ed6d334f27",
+      "box": [
+        622,
+        212,
+        698,
+        320
+      ],
+      "event_id": 6,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            -65
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "68bd8ce2dec74d639ae0228c4f8741ef",
+      "box": [
+        330,
+        343,
+        425,
+        455
+      ],
+      "event_id": 6,
+      "seconds": 2
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "dc67e0b03fe44e898e5286ed3fbae373",
+      "box": [
+        908,
+        366,
+        1077,
+        534
+      ],
+      "event_id": 2,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "4a4348adf91b4377a9d1bb3b65087c49",
+      "box": [
+        304,
+        408,
+        649,
+        614
+      ],
+      "event_id": 2,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "9ec5dc0b6575493fad88ab485c04113e",
+      "box": [
+        492,
+        278,
+        862,
+        503
+      ],
+      "event_id": 2,
+      "seconds": 3
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "d448ee1cf4f24abda59171a8222092a5",
+      "box": [
+        475,
+        280,
+        856,
+        547
+      ],
+      "event_id": 2,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -105,
+            0
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "ff3c598fd20549478d8a6c68a09d6c61",
+      "box": [
+        441,
+        358,
+        863,
+        529
+      ],
+      "event_id": 2,
+      "seconds": 5
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "rocket_option",
+    "arguments": {
+      "frame_id": "1654777406dc4f2d8fdedf419e247ffd",
+      "box": [
+        503,
+        326,
+        824,
+        589
+      ],
+      "event_id": 2,
+      "seconds": 4
+    },
+    "status": "completed"
+  }
+]

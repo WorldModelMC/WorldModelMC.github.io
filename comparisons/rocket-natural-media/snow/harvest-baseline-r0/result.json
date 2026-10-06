@@ -1,0 +1,144 @@
+{
+  "valid": true,
+  "outcome": "success",
+  "reason": "four_new_logs",
+  "logs_gained": 4,
+  "health_lost": 0.0,
+  "navigation_root": null,
+  "navigation_hold_s": 0,
+  "wall_seconds": 108.58622976811603,
+  "before": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 3,
+    "game_time": 955,
+    "day_time": 955,
+    "world_dir": "/work3/s216136/rocket3-snow-terrain-20261006/game/saves/harvest-baseline-r0",
+    "level_name": "Agent 26499 (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      -10,
+      78,
+      4
+    ],
+    "player": {
+      "x": -9.090685880629469,
+      "y": 78.0,
+      "z": 4.5779940023905565,
+      "yaw": -143.84999,
+      "pitch": 14.099984,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:spruce_log",
+          "item": "spruce_log",
+          "count": 1
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 4296,
+      "player_tick": 18,
+      "x": -9.090685880629469,
+      "y": 78.0,
+      "z": 4.5779940023905565,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 53
+    }
+  },
+  "after": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 2190,
+    "game_time": 3142,
+    "day_time": 3142,
+    "world_dir": "/work3/s216136/rocket3-snow-terrain-20261006/game/saves/harvest-baseline-r0",
+    "level_name": "Agent 26499 (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      -10,
+      78,
+      4
+    ],
+    "player": {
+      "x": -8.699999988079073,
+      "y": 78.0,
+      "z": 2.593529526712299,
+      "yaw": -315.0,
+      "pitch": 22.950006,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 5.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:spruce_log",
+          "item": "spruce_log",
+          "count": 5
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 6468,
+      "player_tick": 2190,
+      "x": -8.699999988079073,
+      "y": 78.0,
+      "z": 2.6049296532905464,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 114
+    }
+  }
+}

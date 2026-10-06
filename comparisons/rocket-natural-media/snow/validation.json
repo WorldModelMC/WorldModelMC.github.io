@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "trials": 4,
+  "checks": [
+    "all observed scored states Easy20TPS unpaused/unfrozen",
+    "strictly increasing scorer time",
+    "all actor tool calls completed",
+    "all exact reference/current/mask policy files224x224",
+    "navigation attack/use suppressed",
+    "issued inference age<=.25s and lease<=.15s",
+    "full raw video decoded1280x720 and frame count equals timestamp count",
+    "wall/game/video durations agree within1.5s"
+  ],
+  "limits": [
+    "one converted historical checkpoint",
+    "one trial per arm per task",
+    "sampled visual review reported separately",
+    "policy panels show latest consumed224RGB, not a tracked goal mask",
+    "publication videos resampled onto20Hz wall-time using raw per-frame capture timestamps; original raw video retained"
+  ]
+}

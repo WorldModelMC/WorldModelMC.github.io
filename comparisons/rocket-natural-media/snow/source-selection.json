@@ -1,0 +1,14 @@
+{
+  "path": "/work3/s234842/claudeplay-backup/pc/runs/2026-09-25_sonnet-5/checkpoints/2026-09-25_sonnet-5_step000025",
+  "id": "2026-09-25_sonnet-5_step000025",
+  "created": "2026-09-25T09:53:16+02:00",
+  "game": {
+    "version": "26.3",
+    "world": "Agent 26499"
+  },
+  "episode": {
+    "run": "2026-09-25_sonnet-5",
+    "player": "claude"
+  },
+  "reason": null
+}
