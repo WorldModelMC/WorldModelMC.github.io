@@ -9,9 +9,9 @@
   "active_rocket": [
     "rocket-approach",
     "rocket-harvesting",
-    "rocket-interactions",
     "rocket-recovery"
   ],
   "archive": "/legacy/",
-  "study_status": "setup_not_new_results"
+  "study_status": "setup_not_new_results",
+  "rocket_status": "natural_terrain_pilot"
 }

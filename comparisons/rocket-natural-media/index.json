@@ -1,0 +1,338 @@
+[
+  {
+    "episode": "harvest-baseline-r0",
+    "task": "harvest",
+    "arm": "baseline",
+    "outcome": "success",
+    "reason": "four_new_logs",
+    "wall_seconds": 93.51986092887819,
+    "game_seconds": 93.9,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 4,
+    "max_y": 70.00133597911214,
+    "max_displacement": 10.127191124704517,
+    "tool_calls": 16,
+    "rocket_options": [],
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 1864,
+    "wall_time_video_frames": 1871,
+    "bundle": "forest",
+    "bundle_title": "Natural spruce forest \u00b7 September 30 checkpoint",
+    "base": "/comparisons/rocket-natural-media/forest/harvest-baseline-r0"
+  },
+  {
+    "episode": "harvest-rocket-r0",
+    "task": "harvest",
+    "arm": "rocket",
+    "outcome": "success",
+    "reason": "four_new_logs",
+    "wall_seconds": 104.09741990198381,
+    "game_seconds": 104.4,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 4,
+    "max_y": 69.49520087700593,
+    "max_displacement": 6.77847637779317,
+    "tool_calls": 19,
+    "rocket_options": [
+      {
+        "option_id": "e35ef14681b14a759597612dbb96b076",
+        "event_id": 6,
+        "reference_age_s": 3.9647157192230225,
+        "predictions": 58,
+        "issued": 57,
+        "attack": 0,
+        "forward": 53,
+        "jump": 11,
+        "use": 0,
+        "goal_frame_id": "9676010a349e4bf0bdb97f8f58e963eb",
+        "box": [
+          640,
+          400,
+          696,
+          454
+        ]
+      },
+      {
+        "option_id": "8a7b038ec839464286d561c58306e95e",
+        "event_id": 2,
+        "reference_age_s": 3.3672220706939697,
+        "predictions": 58,
+        "issued": 57,
+        "attack": 0,
+        "forward": 14,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "723caff88e764f6daa99c96e287ed098",
+        "box": [
+          833,
+          147,
+          1039,
+          331
+        ]
+      },
+      {
+        "option_id": "262c3eb1d8b24707a243d924a865d449",
+        "event_id": 2,
+        "reference_age_s": 3.7693679332733154,
+        "predictions": 59,
+        "issued": 58,
+        "attack": 58,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "ba9efde7e6b14660a9dde99db8e7d96f",
+        "box": [
+          275,
+          366,
+          612,
+          617
+        ]
+      },
+      {
+        "option_id": "ef9bf20263c7482ab1cc55efc078fb49",
+        "event_id": 2,
+        "reference_age_s": 3.985753297805786,
+        "predictions": 36,
+        "issued": 35,
+        "attack": 24,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "89a2acaf778b4af49f7c90bef8c617f3",
+        "box": [
+          449,
+          318,
+          769,
+          546
+        ]
+      },
+      {
+        "option_id": "d1fb4606c3914003bb3f7a32ce4a6182",
+        "event_id": 2,
+        "reference_age_s": 6.198492527008057,
+        "predictions": 39,
+        "issued": 38,
+        "attack": 0,
+        "forward": 0,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "5771e8bb7a364de4a0fd64e405b8a1ad",
+        "box": [
+          315,
+          156,
+          818,
+          612
+        ]
+      },
+      {
+        "option_id": "a7aa15514dc9453d8e9023cb1b25d093",
+        "event_id": 2,
+        "reference_age_s": 3.5500049591064453,
+        "predictions": 59,
+        "issued": 58,
+        "attack": 6,
+        "forward": 3,
+        "jump": 0,
+        "use": 0,
+        "goal_frame_id": "12f58fea1b194cb4a29e57c67b760dff",
+        "box": [
+          329,
+          170,
+          809,
+          607
+        ]
+      },
+      {
+        "option_id": "7efba4fcf3044ebaad1b274065043611",
+        "event_id": 2,
+        "reference_age_s": 5.950624704360962,
+        "predictions": 56,
+        "issued": 55,
+        "attack": 45,
+        "forward": 8,
+        "jump": 4,
+        "use": 0,
+        "goal_frame_id": "68cdacdebb1a40939c3f300978421495",
+        "box": [
+          330,
+          288,
+          710,
+          540
+        ]
+      }
+    ],
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 2073,
+    "wall_time_video_frames": 2082,
+    "bundle": "forest",
+    "bundle_title": "Natural spruce forest \u00b7 September 30 checkpoint",
+    "base": "/comparisons/rocket-natural-media/forest/harvest-rocket-r0"
+  },
+  {
+    "episode": "navigate-baseline-r0",
+    "task": "navigate",
+    "arm": "baseline",
+    "outcome": "success",
+    "reason": "different_higher_tree_reached",
+    "wall_seconds": 37.93606964102946,
+    "game_seconds": 38.3,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 0,
+    "max_y": 72.7531999805212,
+    "max_displacement": 9.731065392201286,
+    "tool_calls": 6,
+    "rocket_options": [],
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 753,
+    "wall_time_video_frames": 759,
+    "bundle": "forest",
+    "bundle_title": "Natural spruce forest \u00b7 September 30 checkpoint",
+    "base": "/comparisons/rocket-natural-media/forest/navigate-baseline-r0"
+  },
+  {
+    "episode": "navigate-rocket-r0",
+    "task": "navigate",
+    "arm": "rocket",
+    "outcome": "success",
+    "reason": "different_higher_tree_reached",
+    "wall_seconds": 80.5617793481797,
+    "game_seconds": 80.5,
+    "health_lost": 0.0,
+    "died": false,
+    "logs_gained": 0,
+    "max_y": 86.12160004615784,
+    "max_displacement": 38.80447955927703,
+    "tool_calls": 10,
+    "rocket_options": [
+      {
+        "option_id": "d2bc6519b4f94404a72d9aa8c64fa977",
+        "event_id": 6,
+        "reference_age_s": 3.801792621612549,
+        "predictions": 74,
+        "issued": 73,
+        "attack": 0,
+        "forward": 68,
+        "jump": 21,
+        "use": 0,
+        "goal_frame_id": "6c631ba89e4b41bcb62e7a33c3b457c0",
+        "box": [
+          387,
+          205,
+          494,
+          290
+        ]
+      },
+      {
+        "option_id": "8856042c39b04b9594afec5ea207fecd",
+        "event_id": 6,
+        "reference_age_s": 5.59650182723999,
+        "predictions": 59,
+        "issued": 58,
+        "attack": 0,
+        "forward": 32,
+        "jump": 16,
+        "use": 0,
+        "goal_frame_id": "30444c2bcd764ab19fc3c63c94d1dac2",
+        "box": [
+          907,
+          5,
+          977,
+          125
+        ]
+      },
+      {
+        "option_id": "510ffc50d932443689ecc897c56a60ca",
+        "event_id": 6,
+        "reference_age_s": 4.385068416595459,
+        "predictions": 91,
+        "issued": 90,
+        "attack": 0,
+        "forward": 74,
+        "jump": 18,
+        "use": 0,
+        "goal_frame_id": "d14c7cd7f03b489692d959277e4c9fa3",
+        "box": [
+          258,
+          185,
+          323,
+          222
+        ]
+      },
+      {
+        "option_id": "f849ed721bc44823843d6cb8c5aa681c",
+        "event_id": 6,
+        "reference_age_s": 3.6958158016204834,
+        "predictions": 97,
+        "issued": 96,
+        "attack": 0,
+        "forward": 96,
+        "jump": 47,
+        "use": 0,
+        "goal_frame_id": "e6cfc74939e94f4aae44a6354196d956",
+        "box": [
+          890,
+          21,
+          989,
+          156
+        ]
+      },
+      {
+        "option_id": "212dad9d05f94ef2b2b75bd460e021da",
+        "event_id": 6,
+        "reference_age_s": 4.426788568496704,
+        "predictions": 96,
+        "issued": 95,
+        "attack": 0,
+        "forward": 95,
+        "jump": 50,
+        "use": 0,
+        "goal_frame_id": "92a649fad70240978c39b10276239660",
+        "box": [
+          594,
+          311,
+          631,
+          358
+        ]
+      },
+      {
+        "option_id": "ca0f197be0a24f54b87f65dbee109406",
+        "event_id": 6,
+        "reference_age_s": 5.76886510848999,
+        "predictions": 77,
+        "issued": 76,
+        "attack": 0,
+        "forward": 71,
+        "jump": 16,
+        "use": 0,
+        "goal_frame_id": "e19b2060ceff4b75aa3fde794c2b124f",
+        "box": [
+          430,
+          116,
+          518,
+          267
+        ]
+      }
+    ],
+    "restore_clock_drift": {
+      "game_time": 3,
+      "day_time": 3
+    },
+    "video_frames": 1604,
+    "wall_time_video_frames": 1612,
+    "bundle": "forest",
+    "bundle_title": "Natural spruce forest \u00b7 September 30 checkpoint",
+    "base": "/comparisons/rocket-natural-media/forest/navigate-rocket-r0"
+  }
+]

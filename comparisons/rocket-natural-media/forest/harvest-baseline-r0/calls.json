@@ -1,0 +1,314 @@
+[
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "look",
+    "arguments": {},
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            18,
+            2
+          ],
+          "keys": [
+            "forward"
+          ],
+          "seconds": 1.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -18,
+            0
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.5
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "forward",
+            "jump"
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            -65,
+            0
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.8
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "seconds": 0.8
+        },
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.1
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.5
+        },
+        {
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.3
+        },
+        {
+          "camera": [
+            75,
+            0
+          ],
+          "seconds": 0.3
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            80,
+            0
+          ],
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            24
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "keys": [
+            "forward"
+          ],
+          "seconds": 1.4
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 1.5
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.4
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "camera": [
+            0,
+            -12
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.8
+        },
+        {
+          "camera": [
+            45,
+            0
+          ],
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.8
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.4
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 1
+        },
+        {
+          "keys": [
+            "forward"
+          ],
+          "seconds": 0.2
+        },
+        {
+          "camera": [
+            -130,
+            0
+          ],
+          "seconds": 0.2
+        }
+      ]
+    },
+    "status": "completed"
+  },
+  {
+    "tool": "act",
+    "arguments": {
+      "actions": [
+        {
+          "buttons": [
+            "attack"
+          ],
+          "seconds": 0.85
+        },
+        {
+          "seconds": 0.7
+        },
+        {
+          "keys": [
+            "inventory"
+          ],
+          "seconds": 0.3
+        },
+        {
+          "seconds": 0.3
+        }
+      ]
+    },
+    "status": "completed"
+  }
+]

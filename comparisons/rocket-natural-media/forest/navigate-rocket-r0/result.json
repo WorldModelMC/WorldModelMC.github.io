@@ -1,0 +1,234 @@
+{
+  "valid": true,
+  "outcome": "success",
+  "reason": "different_higher_tree_reached",
+  "logs_gained": 0,
+  "health_lost": 0.0,
+  "navigation_root": {
+    "x": -18,
+    "y": 86,
+    "z": 51,
+    "block": "minecraft:spruce_log",
+    "distance_from_start": 36.808694624270224
+  },
+  "navigation_hold_s": 2.01487524388358,
+  "wall_seconds": 80.5617793481797,
+  "before": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 9,
+    "game_time": 3910,
+    "day_time": 3910,
+    "world_dir": "/work3/s216136/rocket3-real-terrain-20261006/game/saves/navigate-rocket-r0",
+    "level_name": "Agent 18137 (2) (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      7,
+      68,
+      24
+    ],
+    "player": {
+      "x": 7.300000011920929,
+      "y": 68.0,
+      "z": 24.30000001192093,
+      "yaw": 166.50003,
+      "pitch": -6.75002,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 2.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 5,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:stick",
+          "item": "stick",
+          "count": 4
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:crafting_table",
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "slot": 2,
+          "id": "minecraft:spruce_sapling",
+          "item": "spruce_sapling",
+          "count": 2
+        },
+        {
+          "slot": 3,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 17
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:furnace",
+          "item": "furnace",
+          "count": 1
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:stone_axe",
+          "item": "stone_axe",
+          "count": 1
+        },
+        {
+          "slot": 6,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 7,
+          "id": "minecraft:wooden_pickaxe",
+          "item": "wooden_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 8,
+          "id": "minecraft:spruce_planks",
+          "item": "spruce_planks",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 985,
+      "player_tick": 5,
+      "x": 7.300000011920929,
+      "y": 68.0,
+      "z": 24.30000001192093,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 24
+    }
+  },
+  "after": {
+    "ok": true,
+    "flavor": "vanilla116",
+    "rate": 20.0,
+    "frozen": false,
+    "world_loaded": true,
+    "tick": 1619,
+    "game_time": 5520,
+    "day_time": 5520,
+    "world_dir": "/work3/s216136/rocket3-real-terrain-20261006/game/saves/navigate-rocket-r0",
+    "level_name": "Agent 18137 (2) (1.16.1)",
+    "difficulty": "easy",
+    "spawn": [
+      7,
+      68,
+      24
+    ],
+    "player": {
+      "x": -18.70032435844863,
+      "y": 86.0,
+      "z": 53.105741913526515,
+      "yaw": -39.149986,
+      "pitch": 15.149982,
+      "on_ground": true,
+      "health": 20.0,
+      "max_health": 20.0,
+      "food": 20,
+      "saturation": 2.0,
+      "air": 300,
+      "max_air": 300,
+      "dead": false,
+      "xp_level": 0,
+      "game_mode": "survival",
+      "dimension": "minecraft:overworld",
+      "selected_slot": 0,
+      "inventory": [
+        {
+          "slot": 0,
+          "id": "minecraft:stick",
+          "item": "stick",
+          "count": 4
+        },
+        {
+          "slot": 1,
+          "id": "minecraft:crafting_table",
+          "item": "crafting_table",
+          "count": 1
+        },
+        {
+          "slot": 2,
+          "id": "minecraft:spruce_sapling",
+          "item": "spruce_sapling",
+          "count": 2
+        },
+        {
+          "slot": 3,
+          "id": "minecraft:dirt",
+          "item": "dirt",
+          "count": 17
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:furnace",
+          "item": "furnace",
+          "count": 1
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:stone_axe",
+          "item": "stone_axe",
+          "count": 1
+        },
+        {
+          "slot": 6,
+          "id": "minecraft:stone_pickaxe",
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 7,
+          "id": "minecraft:wooden_pickaxe",
+          "item": "wooden_pickaxe",
+          "count": 1
+        },
+        {
+          "slot": 8,
+          "id": "minecraft:spruce_planks",
+          "item": "spruce_planks",
+          "count": 1
+        }
+      ],
+      "armor": [],
+      "offhand": []
+    },
+    "screen": null,
+    "screen_class": null,
+    "overlay": null,
+    "paused": false,
+    "client": {
+      "tick": 2596,
+      "player_tick": 1616,
+      "x": -18.70032435844863,
+      "y": 86.0,
+      "z": 53.105741913526515,
+      "ms_per_tick": 50.0,
+      "chunks": 289,
+      "rendered_chunks": 184
+    }
+  }
+}
