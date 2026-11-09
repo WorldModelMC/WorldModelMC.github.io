@@ -4,3 +4,4 @@
 2. Use Minecraft **1.16.1**, chosen for its common use in speedrunning and compatibility with our Minecraft 1.16 research tooling.
 3. Ensure that findings and project information eventually reside in a repository in our [GitHub organization](https://github.com/WorldModelMC) or in our [Drive folder](https://drive.google.com/drive/folders/1lVd1fIp2F-CLqtppMRSUyTghZCk0AjoN).
 4. The default field of view is **70** (the game default, `fov:0.0` in options.txt), the setting of VPT's recordings and the MineStudio simulator: run every test, evaluation, data recording and policy at it, with field-of-view effects left at the game default. Quake Pro (110) was considered on 2026-10-01 and dropped.
+5. Brightness is at most **1.0**, the in-game slider's maximum (`gamma:1.0` in options.txt), and defaults to 1.0.
